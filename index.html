@@ -3,36 +3,46 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Device</title>
-	
 </head>
 <body>
 	<header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина "Device">
+          <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина Device">
         </a>
-				<ul>
-					<input type="text" value="Поиск по сайту">
-				</ul>
+				<input type="text" value="Поиск по сайту">
+        <section class="modal modal-login">
+          <h3>Личный кабинет</h3>
+          <p>Введите свой логин и пароль.</p>
+          <!-- Форма для входа -->
+          <span class="modal-close">x</span>
+        </section>
         <ul class="user-navigation">
-          <li class="login-link">Войти</li>
+          <li class="compare-link"><input type="button" value="Сравнить"></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Сравнить</li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="login-link">Корзина</li>
+          <li class="basket-link"><input type="button" value="Корзина"></li>
         </ul>
         <ul class="site-navigation">
-          <li><a href="info.html">Каталог товаров</a></li>
-          <li><a href="news.html">Доставка</a></li>
-          <li><a href="price.html">Гарантия</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Контакты</a></li>
+          <li><a href="catalog.html">Каталог товаров</a>
+            <ul>
+             <li><a href="#vr">Виртуальная реальность</a></li>
+             <li><a href="#monopod">Моноподы для селфи</a></li>
+             <li><a href="#action">Экшн-камеры</a></li>
+             <li><a href="#fitness">Фитнес-браслеты</a></li>
+             <li><a href="#watchs">Умные часы</a></li>
+             <li><a href="#quadro">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="guarantee.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-			<section class="slides">
+  </header>
+		<section class="slides">
+        <h2>Слайды</h2>
 				<div class="product_1">
-					<h2>Слайды</h2>
 					<img src="img/product_1" alt="Селфи">
 					<h3>Делай селфи, как Бен Стиллер!</h3>
 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -54,9 +64,40 @@
 						</li>
 					</ul>
 				</div>
-
-			</section>
-      <section class="popular">
+        <div class="product_2">
+            <img src="img/product_2" alt="Браслет">
+            <h3>Худеем правильно!</h3>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <h3>
+            <a href="product_page">Подробнее</a>
+          </h3>
+          <ul>
+            <li>
+              <p>48 часов</p>
+              <p>Без подзарядки</p>
+            </li>
+          </ul>
+        </div>
+        <div class="product_3">
+          <img src="img/product_3" alt="Квадрокоптеры">
+          <h3>Порхает как бабочка, жалит как пчела!</h3>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <h3>
+            <a href="product_page">Подробнее</a>
+          </h3>
+          <ul>
+            <li>
+              <p>800м</p>
+              <p>Дальность полета</p>
+            </li>
+            <li>
+              <p>50м</p>
+              <p>Радиус поражения</p>
+            </li>
+          </ul>
+        </div>
+		</section>
+    <section class="popular">
       	<h2>Популярное</h2>
       	<ul class="popular-items">
       		<li class="popular__items">
@@ -90,8 +131,8 @@
 						</h3>
       		</li>
       	</ul>
-      </section>
-      <section class="services">
+    </section>
+    <section class="services">
       	<h2>Сервисное</h2>
       	<ul class="services-items">
       		<li class="services__items site-navigation-current">
@@ -104,17 +145,17 @@
       			<a href="#credit">Кредит</a>
       		</li>
       	</ul>
-      </section>
-      <section class="logotypes">
+    </section>
+    <section class="logotypes">
       	<h2>Логотипы</h2>
       	<div class="logotypes_items">
-      		<img src="img/dji.png" alt="DJI">
-      		<img src="img/sp.png" alt="spgadgets">
-      		<img src="img/gopro.png" alt="gopro">
-      		<img src="img/vive.png" alt="vive">
+      		<img src="img/dji.png" alt="DJI" width="260" height="100">
+      		<img src="img/sp.png" alt="spgadgets" width="260" height="100">
+      		<img src="img/gopro.png" alt="gopro" width="260" height="100">
+      		<img src="img/vive.png" alt="vive" width="260" height="100">
       	</div>
-      </section>
-      <section class="info_contacts">
+    </section>
+    <section class="info_contacts">
       	<h2>Информация и контакты</h2>
       	<div class="info">
       		<h3>
@@ -126,15 +167,11 @@
       		<p>
       			Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями
       		</p>
-					<h4>
-						<a href="http://dellin.ru">Деловые линии</a>
-					</h4>
-					<h4>
-						<a href="http://ae5000.ru">Автотрейдинг</a>
-					</h4>
-					<h4>
-						<a href="http://jde.ru">ЖелДорЭкспедиция</a>
-					</h4>
+					<ul class="delivery_company">
+						<li><a href="http://dellin.ru">Деловые линии</a></li>
+						<li><a href="http://ae5000.ru">Автотрейдинг</a></li>
+						<li><a href="http://jde.ru">ЖелДорЭкспедиция</a></li>
+          </ul>
 					<h4>
 						<a href="#about_us">Подробнее о нас</a>
 					</h4>
@@ -146,8 +183,9 @@
       		<p>
       			Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проветить работоспособность покупки. Всякое бывает.
       		</p>
+          <img src="img/map" alt="Карта" width="560" height="222">
       		<div class="modal modal_map">
-      			
+      			<!-- Здесь будет форма -->
       		</div>
       		<div class="modal modal_write_us">
 	      		<h4>
@@ -161,40 +199,42 @@
 						<!-- Здесь будет форма -->
 					</div>
       	</div>
-      </section>
-    </header>
+    </section>
     <footer>
-    		<nav class="main-navigation">
+        <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина "Device">
+          <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина Device">
         </a>
-				<ul class="user-navigation">
-          <li class="login-link">Войти</li>
+        <ul class="user-navigation">
+          <li class="compare-link">Сравнить</li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Сравнить</li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="login-link">Корзина</li>
+          <li class="basket-link">Корзина</li>
         </ul>
         <p>г.Москва, ул.Строителей, 15</p>
-				<ul class="site-navigation">
-          <li><a href="info.html">Каталог товаров</a></li>
-          <li><a href="news.html">Доставка</a></li>
-          <li><a href="price.html">Гарантия</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Контакты</a></li>
+        <ul class="site-navigation">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="guarantee.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <p>Тел: +7(495)495-95-95</p>
+      </nav>
         <div class="footer_social">
-        	<ul>
-        		<li><a class="social-button" href="#">Facebook</a></li>
-        		<li><a class="social-button" href="#">Instagram</a></li>
-        		<li><a class="social-button" href="#">Twitter</a></li>
-        	</ul>
+          <ul>
+            <li><a class="social-button" href="#">Facebook</a></li>
+            <li><a class="social-button" href="#">Instagram</a></li>
+            <li><a class="social-button" href="#">Twitter</a></li>
+          </ul>
         </div>
         <p class="footer-copyright">
-        	<img src="img/htmlacademy.png" alt="htmlacademy">
+          <img src="img/htmlacademy.png" alt="htmlacademy">
         </p>
     </footer>
+    <section class="modal modal-login">
+      <h3>Личный кабинет</h3>
+      <p>Введите свой логин и пароль.</p>
+      <!-- Форма для входа -->
+      <span class="modal-close">x</span>
+    </section>
 </body>
 </html>
