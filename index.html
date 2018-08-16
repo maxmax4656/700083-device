@@ -3,36 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header class="main_header">
     <div class="container">
-      <nav class="main_navigation">
-        <a class="main_header_logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина Device">
-        </a>
-        <input type="text" value="Поиск по сайту">
-        <ul class="user_navigation">
-          <li class="enter_link"><a href="#">Войти</a></li>
-          <li class="compare_link"><a href="#">Сравнить</a></li>
-          <li class="basket_link"><a href="#">Корзина</a></li>
-        </ul>
-        <ul class="site_navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
-            <ul>
-             <li><a href="catalog.html">Виртуальная реальность</a></li>
-             <li><a href="catalog.html">Моноподы для селфи</a></li>
-             <li><a href="catalog.html">Экшн-камеры</a></li>
-             <li><a href="catalog.html">Фитнес-браслеты</a></li>
-             <li><a href="catalog.html">Умные часы</a></li>
-             <li><a href="catalog.html">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="main_navigation">
+          <a class="main_header_logo" href="index.html">
+            <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина Device">
+          </a><br>
+          <ul class="user_navigation">
+            <li class="search_link"><input type="text" value="Поиск по сайту"></li>
+            <li class="enter_link"><a href="#">Войти</a></li>
+            <li class="compare_link"><a href="#">Сравнить</a></li>
+            <li class="basket_link"><a href="#">Корзина</a></li>
+          </ul>
+          <ul class="site_navigation">
+            <li><a href="catalog.html">Каталог товаров</a>
+              <ul class="submenu">
+               <li><a href="catalog.html">Виртуальная реальность</a></li>
+               <li><a href="catalog.html">Моноподы для селфи</a></li>
+               <li><a href="catalog.html">Экшн-камеры</a></li>
+               <li><a href="catalog.html">Фитнес-браслеты</a></li>
+               <li><a href="catalog.html">Умные часы</a></li>
+               <li><a href="catalog.html">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
   </header>
   <main>
@@ -40,7 +41,7 @@
       <section class="slides">
           <h2>Слайды</h2>
           <div class="product_1">
-            <img src="img/product_1" alt="Селфи">
+            <img src="img/slider-1.png" alt="Селфи" width="384" height="486">
             <h3>Делай селфи, как Бен Стиллер!</h3>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="product_page">Подробнее</a>
@@ -60,7 +61,7 @@
             </ul>
           </div>
           <div class="product_2">
-              <img src="img/product_2" alt="Браслет">
+              <img src="img/slider-2.png" alt="Браслет" width="345" height="485">
               <h3>Худеем правильно!</h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a href="product_page">Подробнее</a>
@@ -72,7 +73,7 @@
             </ul>
           </div>
           <div class="product_3">
-            <img src="img/product_3" alt="Квадрокоптеры">
+            <img src="img/slider-3.png" alt="Квадрокоптеры" width="526" height="334">
             <h3>Порхает как бабочка, жалит как пчела!</h3>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="product_page">Подробнее</a>
@@ -146,10 +147,10 @@
       <section class="logotypes">
           <h2>Логотипы</h2>
           <div class="logotypes_items">
-            <img src="img/dji.png" alt="DJI" width="260" height="100">
-            <img src="img/sp.png" alt="spgadgets" width="260" height="100">
-            <img src="img/gopro.png" alt="gopro" width="260" height="100">
-            <img src="img/vive.png" alt="vive" width="260" height="100">
+            <img src="img/logo-dji.png" alt="DJI" width="260" height="100">
+            <img src="img/logo-gad.png" alt="spgadgets" width="260" height="100">
+            <img src="img/logo-pro.png" alt="gopro" width="260" height="100">
+            <img src="img/logo-vive.png" alt="vive" width="260" height="100">
           </div>
       </section>
       <section class="info_contacts">
@@ -178,7 +179,7 @@
             <p>
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проветить работоспособность покупки. Всякое бывает.
             </p>
-            <img src="img/map" alt="Карта" width="560" height="222">
+            <img src="img/map_small.jpg" alt="Карта" width="560" height="222">
             <div class="modal modal_map">
               <!-- Здесь будет форма -->
             </div>
@@ -198,22 +199,27 @@
     </div>
   </main>
     <footer>
+      <div class="footer_1">
         <nav class="main_navigation">
-        <a class="main-header_logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина Device">
-        </a>
-        <ul class="user_navigation">
-          <li class="enter_link"><a href="#">Войти</a></li>
-          <li class="compare_link"><a href="#">Сравнить</a></li>
-          <li class="basket_link"><a href="#">Корзина</a></li>
-        </ul>
-        <p>г.Москва, ул.Строителей, 15</p>
-        <ul class="site-navigation">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <p>Тел: +7(495)495-95-95</p>
+          <a class="main_header_logo" href="index.html">
+            <img src="img/logo.svg" width="111" height="24" alt="Логотип магазина Device">
+          </a>
+          <ul class="user_navigation">
+            <li class="enter_link"><a href="#">Войти</a></li>
+            <li class="compare_link"><a href="#">Сравнить</a></li>
+            <li class="basket_link"><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </div> 
+      <div class="footer2"></div>
+        <nav class="main_navigation">
+          <p>г.Москва, ул.Строителей, 15</p>
+          <ul class="site_navigation">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <p>Тел: +7(495)495-95-95</p>
       </nav>
         <div class="footer_social">
           <ul>
@@ -221,16 +227,10 @@
             <li><a class="social_button" href="#">Instagram</a></li>
             <li><a class="social_button" href="#">Twitter</a></li>
           </ul>
-        </div>
-        <p class="footer_copyright">
-          <img src="img/htmlacademy.png" alt="htmlacademy">
-        </p>
+      </div>
+          <p class="footer_copyright">
+            <img src="img/htmlacademy.png" alt="htmlacademy" width="27" height="35">
+          </p>
     </footer>
-    <section class="modal modal_login">
-      <h3>Личный кабинет</h3>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Форма для входа -->
-      <span class="modal_close">x</span>
-    </section>
 </body>
 </html>
