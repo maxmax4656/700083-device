@@ -9,29 +9,29 @@
 	<header class="main-header">
 		<div class="container">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="Логотип">
           <p>Device</p>
         </a>
         <ul class="user-navigation">
-        	<li class="search-link"><input type="text" value="Поиск по сайту"></li>
-          <li class="enter-link"><a href="#">Войти</a></li>
-          <li class="compare-link"><a href="#">Сравнить</a></li>
-          <li class="basket-link"><a href="#">Корзина</a></li>
+        	<li class="search-link"><input type="text" value="Поиск по сайту" aria-label="Поиск по сайту"></li>
+          <li class="enter-link" aria-label="Личный кабинет"><a href="#">Войти</a></li>
+          <li class="compare-link" aria-label="Сравнение товаров"><a href="#">Сравнить</a></li>
+          <li class="basket-link" aria-label="Корзина с покупками"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
+          <li><a href="catalog.html" aria-label="Каталог товаров">Каталог товаров</a>
             <ul class="dropdown">
-             <li><a href="catalog.html">Виртуальная реальность</a></li>
-             <li><a href="catalog.html">Моноподы для селфи</a></li>
-             <li><a href="catalog.html">Экшн-камеры</a></li>
-             <li><a href="catalog.html">Фитнес-браслеты</a></li>
-             <li><a href="catalog.html">Умные часы</a></li>
-             <li><a href="catalog.html">Квадрокоптеры</a></li>
+             <li><a href="catalog.html" aria-label="Категория: Виртуальная реальность">Виртуальная реальность</a></li>
+             <li><a href="catalog.html" aria-label="Категория: Моноподы">Моноподы для селфи</a></li>
+             <li><a href="catalog.html" aria-label="Категория: Экшн-камеры">Экшн-камеры</a></li>
+             <li><a href="catalog.html" aria-label="Категория: Фитнес-браслеты">Фитнес-браслеты</a></li>
+             <li><a href="catalog.html" aria-label="Категория: Умные часы">Умные часы</a></li>
+             <li><a href="catalog.html" aria-label="Категория: Квадрокоптеры">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="delivery.html" aria-label="Доставка">Доставка</a></li>
+          <li><a href="guarantee.html" aria-label="Гарантия">Гарантия</a></li>
+          <li><a href="contacts.html" aria-label="Контакты">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -46,7 +46,20 @@
 			</ul>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<!-- Форма фильтра -->
+				<form action="#" method="post">
+					<label>
+						Стоимость
+						<input type="range" name="price" min="0" max="50000">
+					</label>
+					<label>
+						Цвет
+						<label><input type="checkbox" name="Black">Черный</label>
+						<label><input type="checkbox" name="Black">Черный</label>
+						<label><input type="checkbox" name="Black">Черный</label>
+						<label><input type="checkbox" name="Black">Черный</label>
+						<label><input type="checkbox" name="Black">Черный</label>
+					</label>
+				</form>
 			</section>
 			<div class="sort">
 				<h3 class="sort-1">Сортировка:</h3>
