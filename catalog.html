@@ -48,17 +48,27 @@
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form action="#" method="post">
 					<label>
-						Стоимость
+						<p>Стоимость</p>
 						<input type="range" name="price" min="0" max="50000">
 					</label>
+					<p>Цвет</p>
 					<label>
-						Цвет
 						<label><input type="checkbox" name="Black">Черный</label>
-						<label><input type="checkbox" name="Black">Черный</label>
-						<label><input type="checkbox" name="Black">Черный</label>
-						<label><input type="checkbox" name="Black">Черный</label>
-						<label><input type="checkbox" name="Black">Черный</label>
+						<label><input type="checkbox" name="White">Белый</label>
+						<label><input type="checkbox" name="Blue">Синий</label>
+						<label><input type="checkbox" name="Red">Красный</label>
+						<label><input type="checkbox" name="Pink">Розовый</label>
 					</label>
+					<label>
+						<p>Bluetooth</p>
+						<label><input type="radio" checked name="Yes"/>
+							Есть
+						</label> 
+						<label><input type="radio" name="Yes"/>
+							Нет
+						</label>
+					</label>
+					<p>Показать</p>
 				</form>
 			</section>
 			<div class="sort">
@@ -122,11 +132,11 @@
 					</li>
 				</ul>
 				<ul class="pagination-list">
-					<li class="pagination-item"><a href="#">Вперёд</a></li>
+					<li class="pagination-item"><a href="#" aria-label="Следующая страница">Вперёд</a></li>
 					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">Назад</a></li>
+					<li class="pagination-item"><a href="#" aria-label="Предыдущая страница">Назад</a></li>
 				</ul>
 			</section>
 		</div>
