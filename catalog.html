@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Catalog</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
@@ -46,7 +47,7 @@
 			</ul>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form action="#" method="post">
+				<form action="https://echo.htmlacademy.ru" method="post">
 					<label>
 						Стоимость
 						<input type="range" name="price" min="0" max="50000">
@@ -66,7 +67,7 @@
 							Нет
 						</label>
 					</p>
-					<p>Показать</p>
+					<a href="#" class="button-show">Показать</a>
 				</form>
 			</section>
 			<div class="sort">
@@ -96,6 +97,10 @@
 							<img src="img/content-img/item-1.jpg" alt="Любительская селфи палка" width="360" height="380">
 						</p>
 						<b>500 руб.</b>
+						<p>
+							<span class="to-cart">В корзину</span>
+							<span class="to-compare">Добавить в сравнение</span>
+						</p>
 					</li>
 					<li class="catalog-item">
 						<h3>
