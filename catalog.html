@@ -48,26 +48,24 @@
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form action="#" method="post">
 					<label>
-						<p>Стоимость</p>
+						Стоимость
 						<input type="range" name="price" min="0" max="50000">
 					</label>
 					<p>Цвет</p>
-					<label>
 						<label><input type="checkbox" name="Black">Черный</label>
 						<label><input type="checkbox" name="White">Белый</label>
 						<label><input type="checkbox" name="Blue">Синий</label>
 						<label><input type="checkbox" name="Red">Красный</label>
 						<label><input type="checkbox" name="Pink">Розовый</label>
-					</label>
-					<label>
-						<p>Bluetooth</p>
+					<p>
+						<span>Bluetooth</span>
 						<label><input type="radio" checked name="Yes"/>
 							Есть
-						</label> 
+						</label>
 						<label><input type="radio" name="Yes"/>
 							Нет
 						</label>
-					</label>
+					</p>
 					<p>Показать</p>
 				</form>
 			</section>
@@ -78,10 +76,12 @@
 					<li class="sort-type"><a href="#">По типу</a></li>
 					<li class="sort-pop"><a href="#">По популярности</a></li>
 				</ul>
-				<ul class="sort-2">
-					<li class="sort-more visually-hidden"><a href="#">Больше</a></li>
-					<li class="sort-less visually-hidden"><a href="#">Меньше</a></li>
-				</ul>
+				<div class="goods">
+					<p>
+						<a href="#" class="arrow arrow-up">Больше</a>
+						<a href="#" class="arrow arrow-down">Меньше</a>
+					</p>
+				</div>
 			</div>
 			<section class="catalog">
 				<h2 class="visually-hidden">Моноподы</h2>
@@ -153,7 +153,7 @@
           <li class="basket-link"><a href="#">Корзина</a></li>
         </ul>
       </nav>
-    </div> 
+    </div>
     <div class="footer-2">
       <nav class="main-navigation">
         <p>г.Москва, ул.Строителей, 15</p>
