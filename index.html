@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/main.css"> <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 </head>
+
 <body>
   <header class="main-header">
     <div class="container">
@@ -16,7 +16,10 @@
           <p>Device</p>
         </a>
         <ul class="user-navigation">
-          <li class="search-link"><input type="text" value="Поиск по сайту" aria-label="Поиск по сайту"></li>
+          <li class="search-link">
+            <input type="text" value="Поиск по сайту" aria-label="Поиск по сайту">
+            <a href="catalog.html" class="button-find">Найти</a>
+          </li>
           <li class="enter-link" aria-label="Личный кабинет"><a href="#">Войти</a></li>
           <li class="compare-link" aria-label="Сравнение товаров"><a href="#">Сравнить</a></li>
           <li class="basket-link" aria-label="Корзина с покупками"><a href="#">Корзина</a></li>
@@ -24,12 +27,12 @@
         <ul class="site-navigation">
           <li><a href="catalog.html" aria-label="Каталог товаров">Каталог товаров</a>
             <ul class="dropdown">
-              <li><a href="catalog.html" aria-label="Категория: Виртуальная реальность">Виртуальная реальность</a></li>
-              <li><a href="catalog.html" aria-label="Категория: Моноподы">Моноподы для селфи</a></li>
-              <li><a href="catalog.html" aria-label="Категория: Экшн-камеры">Экшн-камеры</a></li>
-              <li><a href="catalog.html" aria-label="Категория: Фитнес-браслеты">Фитнес-браслеты</a></li>
-              <li><a href="catalog.html" aria-label="Категория: Умные часы">Умные часы</a></li>
-              <li><a href="catalog.html" aria-label="Категория: Квадрокоптеры">Квадрокоптеры</a></li>
+              <li class="dropdown-link"><a href="catalog.html" aria-label="Категория: Виртуальная реальность">Виртуальная реальность</a></li>
+              <li class="dropdown-link"><a href="catalog.html" aria-label="Категория: Моноподы">Моноподы для селфи</a></li>
+              <li class="dropdown-link"><a href="catalog.html" aria-label="Категория: Экшн-камеры">Экшн-камеры</a></li>
+              <li class="dropdown-link"><a href="catalog.html" aria-label="Категория: Фитнес-браслеты">Фитнес-браслеты</a></li>
+              <li class="dropdown-link"><a href="catalog.html" aria-label="Категория: Умные часы">Умные часы</a></li>
+              <li class="dropdown-link"><a href="catalog.html" aria-label="Категория: Квадрокоптеры">Квадрокоптеры</a></li>
             </ul>
           </li>
           <li><a href="delivery.html" aria-label="Доставка">Доставка</a></li>
@@ -46,20 +49,20 @@
         <div class="product-1">
           <img src="img/content-img/slider-1.png" alt="Селфи" width="384" height="486">
           <h3>Делай селфи, как Бен Стиллер!</h3>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="product-page">Подробнее</a>
-          <ul>
+          <ul class="description">
             <li>
               <p>8,5м</p>
-              <p>Длина палки</p>
+              <span>Длина палки
             </li>
             <li>
               <p>5кг</p>
-              <p>Вес палки</p>
+              <span>Вес палки</span>
             </li>
             <li>
               <p>Карбон</p>
-              <p>Материал</p>
+              <span>Материал</span>
             </li>
           </ul>
         </div>
@@ -68,10 +71,10 @@
           <h3>Худеем правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="product-page">Подробнее</a>
-          <ul>
+          <ul class="description">
             <li>
               <p>48 часов</p>
-              <p>Без подзарядки</p>
+              <span>Без подзарядки</span>
             </li>
           </ul>
         </div>
@@ -80,14 +83,14 @@
           <h3>Порхает как бабочка, жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a href="product-page">Подробнее</a>
-          <ul>
+          <ul class="description">
             <li>
               <p>800м</p>
-              <p>Дальность полета</p>
+              <span>Дальность полета</span>
             </li>
             <li>
               <p>50м</p>
-              <p>Радиус поражения</p>
+              <span>Радиус поражения</span>
             </li>
           </ul>
         </div>
@@ -222,7 +225,7 @@
     </div>
     <div class="socials">
       <ul>
-        <li><a class="social-button" href="#"  aria-label="Мы в facebook">Facebook</a></li>
+        <li><a class="social-button" href="#" aria-label="Мы в facebook">Facebook</a></li>
         <li><a class="social-button" href="#" aria-label="Мы в instagram">Instagram</a></li>
         <li><a class="social-button" href="#" aria-label="Мы в Twitter">Twitter</a></li>
       </ul>
@@ -232,4 +235,5 @@
     </p>
   </footer>
 </body>
+
 </html>
