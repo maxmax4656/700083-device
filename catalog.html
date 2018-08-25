@@ -42,12 +42,14 @@
 	</div>
   <main>
   	<div class="container">
-	  	<h1>Моноподы для селфи</h1>
-			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог товаров</a></li>
-				<li class="breadcrumbs-current">Моноподы для селфи</li>
-			</ul>
+			<div class="for-h1">
+		  	<h1 class="catalog-h1">Моноподы для селфи</h1>
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="catalog.html">Каталог товаров</a></li>
+					<li class="breadcrumbs-current">Моноподы для селфи</li>
+				</ul>
+			</div>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<div class="sort">
@@ -67,17 +69,21 @@
 				</div>
 				<div class="form-filters">
 					<form action="https://echo.htmlacademy.ru" method="post">
-						<label>
-							Стоимость
-							<input type="range" name="price" min="0" max="50000">
-						</label>
-						<p>Цвет</p>
-							<label><input type="checkbox" name="Black">Черный</label>
-							<label><input type="checkbox" name="White">Белый</label>
-							<label><input type="checkbox" name="Blue">Синий</label>
-							<label><input type="checkbox" name="Red">Красный</label>
-							<label><input type="checkbox" name="Pink">Розовый</label>
-						<p>
+						<fieldset>
+							<legend>Стоимость</legend>
+								<input type="range" name="price" min="0" max="50000">
+						</fieldset>
+						<fieldset>
+							<legend>Цвет</legend>
+								<label><input type="checkbox" name="Black">Черный</label>
+								<label><input type="checkbox" name="White">Белый</label>
+								<label><input type="checkbox" name="Blue">Синий</label>
+								<label><input type="checkbox" name="Red">Красный</label>
+								<label><input type="checkbox" name="Pink">Розовый</label>
+							<p>
+						</fieldset>
+						<fieldset>
+							<legend>Bluetooth</legend>
 							<span>Bluetooth</span>
 							<label><input type="radio" checked name="Yes"/>
 								Есть
@@ -86,6 +92,7 @@
 								Нет
 							</label>
 						</p>
+						</fieldset>
 						<a href="#" class="button-show">Показать</a>
 					</form>
 				</div>
@@ -104,8 +111,8 @@
 						</p>
 						<b>500 руб.</b>
 						<p class="modal-popup">
-							<a href="#" class="popup-modal">В корзину</a>
-							<a href="#" class="popup-modal">Добавить в сравнение</a>
+							<a href="#" class="popup-modal-big">В корзину</a>
+							<a href="#" class="popup-modal-small">Добавить в сравнение</a>
 						</p>
 					</li>
 					<li class="catalog-item">
@@ -119,8 +126,8 @@
 						</p>
 						<b>1 500 руб.</b>
 						<p class="modal-popup">
-							<a href="#" class="popup-modal">В корзину</a>
-							<a href="#" class="popup-modal">Добавить в сравнение</a>
+							<a href="#" class="popup-modal-big">В корзину</a>
+							<a href="#" class="popup-modal-small">Добавить в сравнение</a>
 						</p>
 					</li>
 					<li class="catalog-item">
@@ -134,8 +141,8 @@
 						</p>
 						<b>2 500 руб.</b>
 						<p class="modal-popup">
-							<a href="#" class="popup-modal">В корзину</a>
-							<a href="#" class="popup-modal">Добавить в сравнение</a>
+							<a href="#" class="popup-modal-big">В корзину</a>
+							<a href="#" class="popup-modal-small">Добавить в сравнение</a>
 						</p>
 					</li>
 					<li class="catalog-item">
@@ -149,8 +156,8 @@
 						</p>
 						<b>4 900 руб.</b>
 						<p class="modal-popup">
-							<a href="#" class="popup-modal">В корзину</a>
-							<a href="#" class="popup-modal">Добавить в сравнение</a>
+							<a href="#" class="popup-modal-big">В корзину</a>
+							<a href="#" class="popup-modal-small">Добавить в сравнение</a>
 						</p>
 					</li>
 				</ul>
