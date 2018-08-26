@@ -387,6 +387,10 @@ a {
 
 /* Модалка "Напишите нам" */
 
+form {
+  width: 360px;
+}
+
 .modal input {
   width: 360px;
   height: 50px;
@@ -499,6 +503,10 @@ textarea:focus {
   text-transform: none;
 }
 
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs li {
   list-style-type: none;
   color: #cacaca;
@@ -535,6 +543,10 @@ textarea:focus {
 
 /* Сортировка */
 
+.sort {
+  display: flex;
+}
+
 .sort-1 {
   font-family: gilroyextrabold, sans-serif;
   font-size: 16px;
@@ -547,12 +559,12 @@ textarea:focus {
 
 .sort-2 {
   background-color: #dbdbdb;
+  display: flex;
 }
 
 .sort-2 li {
   list-style-type: none;
 }
-
 
 .sort-2 a {
   text-decoration: none;
@@ -577,6 +589,7 @@ textarea:focus {
 
 .form-filters {
   background-color: #efefef;
+  display: flex;
 }
 
 
@@ -621,6 +634,8 @@ textarea:focus {
 .pagination-list {
   background-color: #ebebeb;
   padding: 5px 0;
+  display: flex;
+
 }
 
 .pagination-list li {
@@ -644,6 +659,17 @@ textarea:focus {
 
 .page-move:active {
   color: rgba(0,0,0,0.3);
+}
+
+
+
+
+/* Каталог продуктов */
+
+.catalog-list {
+  display: flex;
+  width: 760px;
+  flex-wrap: wrap;
 }
 
 .catalog-item span {
