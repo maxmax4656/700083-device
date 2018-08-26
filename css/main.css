@@ -491,7 +491,8 @@ textarea:focus {
   font-size: 47px;
   line-height: 48px;
   font-weight: 900;
-
+  color: #000;
+  text-transform: none;
 }
 
 .breadcrumbs li {
@@ -506,6 +507,7 @@ textarea:focus {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+  font-weight: 400;
 }
 
 .breadcrumbs-current {
@@ -515,6 +517,7 @@ textarea:focus {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+  font-weight: 400;
 }
 
 .breadcrumbs a:hover, .breadcrumbs a:focus {
@@ -533,8 +536,9 @@ textarea:focus {
   font-size: 16px;
   text-transform: uppercase;
   line-height: 24px;
-  letter-spacing: 0.2em;
   background-color: #eeeeee;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .sort-2 {
@@ -545,6 +549,7 @@ textarea:focus {
   list-style-type: none;
 }
 
+
 .sort-2 a {
   text-decoration: none;
   color: #b2b2b2;
@@ -552,6 +557,7 @@ textarea:focus {
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
+  font-weight: 400;
 }
 
 .sort-2 a:hover, .sort-2 a:focus {
@@ -574,12 +580,6 @@ textarea:focus {
 
 /* Модалка */
 
-.modal-popup a {
-  color: #a3a3a3;
-  font-family: "Open Sans, Arial", sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-}
 
 .popup-modal-big {
   font-family: gilroyextrabold, sans-serif;
@@ -587,6 +587,7 @@ textarea:focus {
   line-height: 24px;
   text-transform: uppercase;
   color: #000;
+  letter-spacing: 2px;
 }
 
 .popup-modal-big:active {
@@ -618,9 +619,24 @@ textarea:focus {
   list-style-type: none;
 }
 
-.pagination-list a {
-  text-decoration: none;
+
+.page-move {
+  font-family: gilroyextrabold, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
   color: #000;
+  font-weight: 800;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.page-move:hover {
+  background-color: #d9d9d9;
+}
+
+.page-move:active {
+  color: rgba(0,0,0,0.3);
 }
 
 .pagination-list:first-child li:hover {
