@@ -342,6 +342,10 @@ a {
 
 /* О нас */
 
+.for-flex {
+  display: flex;
+}
+
 .info-contacts h3 {
   font-family: gilroyextrabold, sans-serif;
   font-size: 47px;
@@ -611,14 +615,17 @@ textarea:focus {
   color: rgba(0,0,0,0.2);
 }
 
+
+/* Пагинация страниц */
+
 .pagination-list {
   background-color: #ebebeb;
+  padding: 5px 0;
 }
 
 .pagination-list li {
   list-style-type: none;
 }
-
 
 .page-move {
   font-family: gilroyextrabold, sans-serif;
@@ -627,7 +634,7 @@ textarea:focus {
   letter-spacing: 2px;
   color: #000;
   font-weight: 800;
-  padding: 12px;
+  padding: 8px;
   text-decoration: none;
 }
 
@@ -637,11 +644,6 @@ textarea:focus {
 
 .page-move:active {
   color: rgba(0,0,0,0.3);
-}
-
-.pagination-list:first-child li:hover {
-  border: 1px solid #d9d9d9;
-  background-color: #d9d9d9;
 }
 
 .catalog-item span {
