@@ -160,8 +160,12 @@ a {
 
 /*  Навигация */
 
-.site-navigation {
-  display: flex;
+.site-navigation li {
+  display: inline-block;
+}
+
+.site-navigation > li {
+  position: relative;
 }
 
 .site-navigation a {
@@ -170,6 +174,9 @@ a {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
+  display: block;
+  padding: 8px 0;
+  height: 40px;
 }
 
 .site-navigation a:hover {
@@ -184,27 +191,37 @@ a {
   width: 300px;
 }
 
+
+
 .delivery {
   width: 126
 }
 
-.site-navigation li:nth-of-type(2) {}
-
-.site-navigation li:nth-of-type(3) {}
-
-.site-navigation li:nth-of-type(4) {}
-
-.site-navigation {
-  border: 1px solid red;
+.site-navigation .dropdown {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  top: 50px;
+  width: 600px;
+  display: none;
 }
 
-.dropdown {
-  color: #000;
+.dropdown a {
   font-family: opensanslight, sans-serif;
   font-size: 15px;
   line-height: 36px;
-  letter-spacing: 0.01em;
+  font-weight: 400;
+  color: #000;
   text-transform: none;
+  letter-spacing: 1px;
+  margin-right: 25px;
+  display: block;
+  height: 10px;
+}
+
+.site-navigation > li:hover .dropdown {
+  display: block;
 }
 
 /* Слайдды */
