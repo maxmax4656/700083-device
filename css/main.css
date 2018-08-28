@@ -1,30 +1,17 @@
 @font-face {
-  font-family: "Gilroy";
+  font-family: "gilroylight";
   src: url(../fonts/gilroylight.woff), url(../fonts/gilroylight.woff2);
   font-weight: 300;
   font-style: light;
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "gilroyextrabold";
   src: url(../fonts/gilroyextrabold.woff), url(../fonts/gilroyextrabold.woff2);
   font-weight: 700;
   font-style: ExtraBold;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/opensanslight.woff), url(../fonts/opensanslight.woff2);
-  font-weight: 300;
-  font-style: Light;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/gilroylight.woff), url(../fonts/opensans.woff2);
-  font-weight: 400;
-  font-style: Regular;
-}
 
 body {
   margin: 0;
@@ -45,6 +32,24 @@ li {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -75,6 +80,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* User-navigation */
+
 .user-navigation a {
   text-decoration: none;
   text-transform: none;
@@ -84,6 +91,7 @@ a {
   font-size: 15px;
   line-height: 30px;
   color: #000;
+  display: block;
 }
 
 .user-navigation a:hover {
@@ -94,71 +102,101 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.enter-link {
-  width: 120px;
-}
-
-.compare-link {
-  width: 120px;
-}
-
-.basket-link {
-  width: 100px;
-}
 
 .user-navigation {
   display: flex;
-  align-items: center;
 }
 
-.user-navigation li:nth-of-type(2) {
-  margin-left: 120px;
-  margin-right: 180px;
+.user-navigation .enter-link {
+  padding-left: 50px;
+  position: relative;
 }
 
-.user-navigation li:nth-of-type(3) {
-  margin-right: 20px;
+.enter-link::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  background-image: url(../img/svg/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.search-link a {
-  text-decoration: none;
-  text-transform: none;
-  font-family: opensanslight, sans-serif;
-  line-height: 30px;
-  color: rgba(0, 0, 0, 0.3);
-  padding: 15px 20px;
-  border: 0;
-  margin: 0;
-  letter-spacing: 0.01em;
+.enter-link:hover::before,
+.enter-linl:focus::before {
+  opacity: 0.6;
 }
 
-.search-link a:hover {
-  background-color: #000;
-  color: #ffffff;
+.enter-link:active::before {
+  opacity: 0.3;
 }
 
-.search-link a:active {
-  color: #747474;
+.user-navigation .compare-link {
+  padding-left: 50px;
+  position: relative;
 }
 
-.search-link input {
-  border: 0;
-  background-color: #f7e296;
-  color: rgba(0, 0, 0, 0.3);
-  outline: 0;
-  font-family: opensanslight, sans-serif;
-  line-height: 30px;
-  margin: 0;
-  height: 40px;
-  width: 320px;
+.compare-link::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background-image: url(../img/svg/compare.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.search-link input:focus {
-  border-bottom: 2px solid #000;
-  color: rgba(0, 0, 0, 1);
+.compare-link:hover::before,
+.compare-linl:focus::before {
+  opacity: 0.6;
 }
+
+.compare-link:active::before {
+  opacity: 0.3;
+}
+
+.user-navigation .basket-link {
+  padding-left: 50px;
+  position: relative;
+}
+
+.basket-link::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  background-image: url(../img/svg/cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.basket-link:hover::before,
+.basket-linl:focus::before {
+  opacity: 0.6;
+}
+
+.basket-link:active::before {
+  opacity: 0.3;
+}
+
+.button-find {
+  border: 1px solid red;
+}
+
+
 
 /*  Навигация */
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .site-navigation li {
   display: inline-block;
@@ -190,8 +228,6 @@ a {
 .site-navigation .catalog {
   width: 300px;
 }
-
-
 
 .delivery {
   width: 126
@@ -226,6 +262,10 @@ a {
 
 /* Слайдды */
 
+.slides {
+  margin-bottom: 100px;
+}
+
 .slides h3 {
   font-family: gilroyextrabold, sans-serif;
   font-size: 47px;
@@ -253,6 +293,14 @@ a {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
+}
+
+.description-slides {
+  width: 500px;
+}
+
+.image-slide {
+  width: 500px;
 }
 
 .description {
@@ -285,6 +333,23 @@ a {
   justify-content: space-between;
   width: 1000px;
   margin: 0 auto;
+}
+
+.product-page::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 20%;
+  background-color: #f0c52e;
+  transition: all .2s ease-in-out;
+  transform: translateY(-50%);
+}
+
+.product-page:hover {
+  height: 100%;
 }
 
 /* Популярное */

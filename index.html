@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -17,13 +17,15 @@
           <p>Device</p>
         </a>
         <ul class="user-navigation">
-          <li class="search-link">
-            <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-            <a href="catalog.html" class="button-find">Найти</a>
+          <li class="d6">
+            <form action="catalog.html" method="get">
+              <input type="text" placeholder="Поиск по сайту">
+              <button type="submit">Поиск</button>
+            </form>
           </li>
-          <li class="enter-link" aria-label="Личный кабинет"><a href="#">Войти</a></li>
-          <li class="compare-link" aria-label="Сравнение товаров"><a href="#">Сравнить</a></li>
-          <li class="basket-link" aria-label="Корзина с покупками"><a href="#">Корзина</a></li>
+          <li aria-label="Личный кабинет"><a href="#" class="enter-link">Войти</a></li>
+          <li aria-label="Сравнение товаров"><a href="#" class="compare-link">Сравнить</a></li>
+          <li aria-label="Корзина с покупками"><a href="#" class="basket-link">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
           <li><a href="catalog.html" aria-label="Каталог товаров">Каталог товаров</a>
@@ -211,13 +213,16 @@
               <div class="modal modal-map">
                 <a href="#"><img src="img/content-img/map-big.jpg" alt="Большая карта"></a>
               </div>
+              <h4>
+              <a href="#write-us">Напишите нам</a>
+              </h4>
             </div>
           </div>
           <div class="modal modal-write-us">
               <h4>
               <a href="#write-us">Напишите нам</a>
               </h4>
-              <form action="https://echo.htmlacademy.ru" class="modal">
+              <form action="https://echo.htmlacademy.ru" class="modal" method="get">
                 <label for="name">Ваше имя:</label>
                 <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
                 <label for="email">Ваш e-mail:</label>
@@ -237,7 +242,6 @@
       <div class="footer-1">
         <nav class="main-navigation .footer-navigation">
           <a class="main-header-logo-footer" href="index.html">
-
           </a>
           <ul class="user-navigation footer-link">
             <p class="footer-logo">Device</p>
