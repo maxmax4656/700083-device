@@ -85,7 +85,7 @@ img {
 .user-navigation a {
   text-decoration: none;
   text-transform: none;
-  font-family: gilroylight, sans-serif;
+  font-family: opensanslight, sans-serif;
   font-weight: 300;
   letter-spacing: 0.1em;
   font-size: 15px;
@@ -105,6 +105,8 @@ img {
 
 .user-navigation {
   display: flex;
+  justify-content: space-between;
+  max-width: 1040px;
 }
 
 .user-navigation .enter-link {
@@ -185,17 +187,53 @@ img {
   opacity: 0.3;
 }
 
-.button-find {
-  border: 1px solid red;
+.d6 input {
+  border: 0;
+  background-color: #f7e296;
+  outline: 0;
+  border-bottom: 2px solid black;
+  padding: 8px 20px;
+  margin: -5px;
 }
 
+.d6 input::placeholder {
+  color: rgba(0,0,0,0.3);
+}
 
+.d6 input:hover::placeholder {
+  color: rgba(0,0,0,0.6);
+}
+
+.d6 input:focus::placeholder {
+  color: rgba(0,0,0,1);
+}
+
+.d6 button {
+  background-color: #f7e296;
+  border: 2px solid black;
+  font-family: opensanslight, sans-serif;
+  font-weight: 300;
+  padding: 8px 20px;
+  outline: 0;
+  margin: 0;
+}
+
+.d6 button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.d6 button:active {
+  color: rgba(255,255,255,0.3);
+}
 
 /*  Навигация */
 
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1040px;
 }
 
 .site-navigation li {
@@ -259,6 +297,7 @@ img {
 .site-navigation > li:hover .dropdown {
   display: block;
 }
+
 
 /* Слайдды */
 
