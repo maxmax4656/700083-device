@@ -114,6 +114,7 @@ img {
   position: relative;
 }
 
+
 .enter-link::before {
   content: "";
   width: 16px;
@@ -611,6 +612,125 @@ textarea:focus {
   color: rgba(255,255,255,0.3);
 }
 
+.site-navigation-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1040px;
+  align-content: center;
+}
+.site-navigation-footer a {
+  color: rgba(255, 255, 255, 1);
+  font-family: gilroyextrabold, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  display: block;
+  padding: 18px 0;
+  height: 40px;
+
+}
+.site-navigation-footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-navigation-footer a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-footer .catalog {
+  width: 300px;
+}
+
+.site-navigation-footer p {
+  font-family: opensanslight, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  text-transform: none;
+}
+
+.footer-link {
+  align-items: center;
+}
+
+.footer-link a {
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-link a:first-child {
+  justify-content: flex-start;
+}
+
+.socials-items {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-items a {
+  margin-right: 23px;
+}
+
+.social-button {
+  opacity: 0.3;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.3;
+}
+
+.logo-academy:hover {
+  opacity: 0.6;
+}
+
+.logo-academy:active {
+  opacity: 0.3;
+}
+
+.enter-link {
+  color: rgba(255,255,255,0.7);
+  font-family: opensanslight, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.enter-link:hover {
+  color: rgba(255,255,255,1);
+}
+
+.enter-link:active {
+  color: rgba(255,255,255,0.3);
+}
+
+.enter-link path {
+  fill: #ffc600;
+}
+
+.enter-link path:hover {
+  opacity: 0.6;
+}
+
+.enter-link path:active {
+  opacity: 0.3;
+}
+
+.enter-link span {
+  margin-left: 9px;
+}
+
+.user-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 /* Catalog.html */
 /* breadcrumbs */
@@ -626,6 +746,7 @@ textarea:focus {
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
 }
 
 .breadcrumbs li {
@@ -641,6 +762,36 @@ textarea:focus {
   line-height: 24px;
   text-transform: none;
   font-weight: 400;
+  margin-right: 10px;
+}
+
+.main-bread {
+  position: relative;
+  margin-right: 50px;
+}
+
+.main-bread::after {
+  content: "";
+  width: 4px;
+  height: 7px;
+  position: absolute;
+  top: 5px;
+  left: 57px;
+  background-image: url(../img/svg/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-bread::after {
+  content: "";
+  width: 4px;
+  height: 7px;
+  position: absolute;
+  top: 5px;
+  left: 117px;
+  background-image: url(../img/svg/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .breadcrumbs-current {
@@ -710,6 +861,10 @@ textarea:focus {
 
 .form-filters {
   background-color: #efefef;
+  display: flex;
+}
+
+.form-flex {
   display: flex;
 }
 
