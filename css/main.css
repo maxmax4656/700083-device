@@ -30,6 +30,11 @@ li {
   list-style-type: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -85,7 +90,7 @@ img {
 .user-navigation a {
   text-decoration: none;
   text-transform: none;
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   letter-spacing: 0.1em;
   font-size: 15px;
@@ -107,6 +112,7 @@ img {
   display: flex;
   justify-content: space-between;
   max-width: 1040px;
+  margin: 0 auto;
 }
 
 .user-navigation .enter-link {
@@ -195,6 +201,8 @@ img {
   border-bottom: 2px solid black;
   padding: 8px 20px;
   margin: -5px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
 }
 
 .d6 input::placeholder {
@@ -212,7 +220,7 @@ img {
 .d6 button {
   background-color: #f7e296;
   border: 2px solid black;
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   padding: 8px 20px;
   outline: 0;
@@ -235,6 +243,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1040px;
+  margin: 0 auto;
 }
 
 .site-navigation li {
@@ -317,7 +326,8 @@ img {
 }
 
 .slides p {
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open sans', 'Arial', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -397,6 +407,7 @@ img {
 .popular .popular-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .popular-items a {
@@ -413,6 +424,15 @@ img {
 
 .popular-item {
   width: 160px;
+}
+
+.popular-img {
+  width: 160px;
+  height: 160px;
+}
+
+.popular-items {
+  background-color: #f
 }
 
 /* Сервисное */
@@ -456,10 +476,12 @@ img {
 }
 
 .services-items p {
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
+  text-transform: none;
 }
 
 /* О нас */
@@ -477,7 +499,8 @@ img {
 }
 
 .info-contacts p {
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   text-transform: none;
@@ -491,6 +514,7 @@ img {
   color: #000;
   text-transform: none;
 }
+
 
 .info {
   width: 599px;
@@ -841,7 +865,8 @@ textarea:focus {
 .sort-2 a {
   text-decoration: none;
   color: #b2b2b2;
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -867,8 +892,6 @@ textarea:focus {
 .form-flex {
   display: flex;
 }
-
-
 
 
 /* Модалка */
