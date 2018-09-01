@@ -46,7 +46,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -205,7 +205,6 @@ img {
 }
 
 .d6 {
-  outline: 1px solid red;
 }
 
 .d6 input {
@@ -217,7 +216,7 @@ img {
   margin: -5px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
-  width: 250px;
+  width: 225px;
 }
 
 .d6 input::placeholder {
@@ -259,15 +258,40 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1040px;
-  margin: 0 auto;
 }
 
 .site-navigation li {
-  display: inline-block;
 }
 
 .site-navigation > li {
   position: relative;
+  outline: 1px solid red;
+}
+
+.site-navigation > li:first-child {
+  margin-left: 55px;
+  position: relative;
+  padding-right: 30px;
+}
+
+.site-navigation > li:first-child::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: url(../img/svg/plus.svg) no-repeat;
+  opacity: 0.3;
+  top: 12px;
+  left: 225px;
+}
+
+.site-navigation > li:nth-child(2) {
+  margin-left: 170px;
+  margin-right: -35px;
+}
+
+.site-navigation > li:nth-child(4) {
+  margin-right: -30px;
 }
 
 .site-navigation a {
@@ -308,7 +332,7 @@ img {
 }
 
 .dropdown a {
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 400;
@@ -324,6 +348,9 @@ img {
   display: block;
 }
 
+.dropdown {
+  outline: 1px solid red;
+}
 
 /* Слайдды */
 
@@ -826,17 +853,23 @@ textarea:focus {
   background-position: 0 0;
 }
 
-.main-bread::after {
+.catalog-bread {
+  position: relative;
+  margin-right: 50px;
+}
+
+.catalog-bread::after {
   content: "";
   width: 4px;
   height: 7px;
   position: absolute;
   top: 5px;
-  left: 70px;
+  left: 125px;
   background-image: url(../img/svg/nav-arrow.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 
 .breadcrumbs-current {
   text-decoration: none;
@@ -1083,20 +1116,41 @@ form label {
 
 .pagination-list {
   display: flex;
-  outline: 1px solid red;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+}
+
+.pagination-list a {
+  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
 }
 
 .pagination-list li {
-  outline: 1px solid red;
+  padding: 23px 18px;
 }
 
 .pagination-list li:first-child {
+  margin-right: auto;
+  margin-left: 25px;
 }
 
 .pagination-list li:last-child {
+  margin-left: auto;
+  margin-right: 25px;
 }
+
+.pagination-list li:nth-child(2) {
+}
+
+.pagination-list li:nth-child(3) {
+}
+
+
+
 
 
 
@@ -1110,7 +1164,7 @@ form label {
   margin-left: 70px;
 }
 
-.catalog li {
+.catalog-item {
   margin-right: 40px;
 }
 
