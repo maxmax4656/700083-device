@@ -502,6 +502,7 @@ nav .site-navigation .dropdown li {
 
 .services {
   background-color: #e5e5e5;
+  margin-bottom: 90px;
 }
 
 .services-items {
@@ -545,6 +546,33 @@ nav .site-navigation .dropdown li {
   line-height: 30px;
   color: #464646;
   text-transform: none;
+}
+
+/* Логотипы */
+
+.logotypes {
+  margin-bottom: 90px;
+}
+
+.logotypes-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-1:hover {
+  background: url('../img/content-img/logo-dji(ac).jpg') no-repeat;
+}
+
+.logo-2:hover {
+  background: url('../img/content-img/logo-gad(ac).jpg') no-repeat;
+}
+
+.logo-3:hover {
+  background: url('../img/content-img/logo-pro(ac).jpg') no-repeat;
+}
+
+.logo-4:hover {
+  background: url('../img/content-img/logo-vive(ac).jpg') no-repeat;
 }
 
 /* О нас */
@@ -673,6 +701,7 @@ textarea:focus {
 .footer-main {
   background-color: #464646;
   color: #ffffff;
+  margin-top: 90px;
 }
 
 .footer-main a {
@@ -746,21 +775,35 @@ textarea:focus {
   color: rgba(255,255,255,0.7);
 }
 
-.footer-link a:first-child {
-  justify-content: flex-start;
-}
-
 .socials-items {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 70px;
 }
 
-.socials-items a {
+
+.dec-element {
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+  margin-right: 420px;
+}
+
+.logo-con {
+  width: 500px;
+  text-align: right;
+  margin: 0;
+}
+
+.social-button {
   margin-right: 23px;
 }
 
 .social-button {
   opacity: 0.3;
+  width: 52.5px;
 }
 
 .social-button:hover {
@@ -770,6 +813,7 @@ textarea:focus {
 .social-button:active {
   opacity: 0.3;
 }
+
 
 .logo-academy:hover {
   opacity: 0.6;
@@ -936,13 +980,19 @@ textarea:focus {
   align-items: center;
   margin: 0;
   padding: 0;
+  background-image: 468px;
 }
 
 .sort-1 .sort-2 {
   display: flex;
-  justify-content: space-between;
-  width: 300px;
+  width: 400px;
   align-items: center;
+  margin: 0;
+  margin-right: 0;
+}
+
+.sort-2 li {
+  margin-right: 30px;
 }
 
 .sort-1 h3 {
@@ -982,7 +1032,7 @@ textarea:focus {
 }
 
 .goods {
-  width: 230px;
+  width: 130px;
   display: flex;
   justify-content: flex-end;
 }
@@ -1002,6 +1052,8 @@ textarea:focus {
 .goods a:active {
   opacity: 1;
 }
+
+
 
 
 /* Форма фильтров */
@@ -1135,7 +1187,6 @@ form label {
 }
 
 
-
 /* Модалка */
 
 
@@ -1177,15 +1228,53 @@ form label {
   width: 100%;
   justify-content: space-between;
   background-color: #e6e6e6;
+  margin-bottom: 77px;
 }
 
-.pagination-list a {
+.page-move {
+  color: #000;
   font-family: gilroyextrabold, 'Arial', sans-serif;
   font-weight: 900;
   font-size: 16px;
   line-height: 24px;
-  color: #000;
 }
+
+.pagination-list li:first-child:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-list li:last-child:hover {
+  background-color: #d9d9d9;
+}
+
+.page-move:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.page-1,
+.page-2,
+.page-3 {
+  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0,0,0,0.3);
+}
+
+.page-2:hover,
+.page-3:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+.page-2:active,
+.page-3:active {
+  color: rgba(0,0,0);
+}
+
+.current {
+  color: rgb(0,0,0);
+}
+
 
 .pagination-list li {
   padding: 23px 18px;
@@ -1193,12 +1282,10 @@ form label {
 
 .pagination-list li:first-child {
   margin-right: auto;
-  margin-left: 25px;
 }
 
 .pagination-list li:last-child {
   margin-left: auto;
-  margin-right: 25px;
 }
 
 .pagination-list li:nth-child(2) {
