@@ -60,8 +60,8 @@
 					<div class="form-filters">
 						<form action="https://echo.htmlacademy.ru" method="get">
 							<div class="sort-1">
-								<h3 class="sort-1">Фильтр:</h3>
-								<h3 class="sort-1">Сортировка:</h3>
+								<h3>Фильтр:</h3>
+								<h3>Сортировка:</h3>
 								<ul class="sort-2">
 									<li class="sort-price"><a href="#">По цене</a></li>
 									<li class="sort-type"><a href="#">По типу</a></li>
@@ -80,15 +80,27 @@
 									</p>
 								</div>
 							</div>
-							<fieldset class=color-1>
-								<legend class="top-bor">Стоимость</legend>
-									<input type="range" name="price" min="0" max="50000" />
+							<fieldset class="filter-item">
+								<legend>Стоимость</legend>
+								<div class="range-filter">
+									<div class="range-controls">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+										<div class="toggle toggle-min"></div>
+										<div class="toggle toggle-max"></div>
+									</div>
+									<div class="price-controls">
+										<label class="min-price"><input type="text" name="min-price" value="от 0"></label>
+										<label class="max-price"><input type="text" name="max-price" value="до 5000"></label>
+									</div>
+								</div>
 							</fieldset>
 							<fieldset class="color">
 								<legend class="top-bor">Цвет</legend>
 									<p class="login-help">
 										<label class="login-checkbox">
-											<input type="checkbox" name="Black" class="visually-hidden">
+											<input type="checkbox" name="Black" class="visually-hidden" checked>
 											<span class="checkbox-indicator"></span>
 											Черный
 										</label>
@@ -102,14 +114,14 @@
 									</p>
 									<p class="login-help">
 										<label class="login-checkbox">
-											<input type="checkbox" name="Blue" class="visually-hidden">
+											<input type="checkbox" name="Blue" class="visually-hidden" checked>
 											<span class="checkbox-indicator"></span>
 											Синий
 										</label>
 									</p>
 									<p class="login-help">
 										<label class="login-checkbox">
-											<input type="checkbox" name="Red" class="visually-hidden">
+											<input type="checkbox" name="Red" class="visually-hidden" checked>
 											<span class="checkbox-indicator"></span>
 											Красный
 										</label>
@@ -138,7 +150,7 @@
 								</p>
 							</p>
 							</fieldset>
-							<a href="#" class="button-send">Показать</a>
+							<a class="slider-item-button button" href="product-page">Показать</a>
 						</form>
 					</div>
 				</section>
