@@ -202,34 +202,42 @@
           </div>
         </div>
       </section>
+
+
+
+
       <section class="services">
         <div class="container">
           <h2 class="visually-hidden" aria-label="Доставка, гарантия, кредит">Сервисное</h2>
-          <div class="services-items">
-            <div class="services-item">
-              <div class="about-info">
-                <a href="#deliver" aria-label="Информация о доставке">Доставка</a>
-                <h4>Доставка</h4>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </div>
+          <div class="serv-flex-22">
+            <div class="serv-decr">
+              <a href="#" class="button-3" href="product-page">Доставка</a>
+              <a href="#" class="button-3" href="product-page">Гарантия</a>
+              <a href="#" class="button-3" href="product-page">Кредит</a>
             </div>
-            <div class="services-item">
-              <div class="about-info">
-                <a href="#guarantee" aria-label="Информация о гарантияи">Гарантии</a>
+            <div class="serv-about">
+              <div class="serv-about-1">
+                <h4>Доставка</h4><br>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <img src="img/svg/delivery.svg" alt="" width="136" height="164">
+              </div>
+              <!--<div class="serv-about-2">
                 <h4>Гарантия</h4>
                 <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </div>
-            </div>
-            <div class="services-itemt">
-              <div class="about-info">
-                <a href="#credit" aria-label="Информация о кредите">Кредит</a>
+              <div class="serv-about-3">
                 <h4>Кредит</h4>
-                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>-->
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+
+
+
       <section class="logotypes">
         <div class="container">
           <h2 class="visually-hidden">Логотипы</h2>
@@ -269,14 +277,14 @@
               <div class="dec-element"></div>
               <h3>Контакты</h3>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проветить работоспособность покупки. Всякое бывает.</p>
-              <img src="img/content-img/map-small.jpg" alt="Карта" width="560" height="222">
+              <img src="img/content-img/map-small.jpg" class="map-small" alt="Карта" width="560" height="222">
               <div class="modal modal-map">
                 <h2 class="visually-hidden">Как до нас добраться</h2>
                 <a href="#"><img src="img/content-img/map-big.jpg" alt="Большая карта"></a>
                 <button class="modal-close" type="button">Закрыть</button>
               </div>
               <h4>
-              <a class="slider-item-button button" href="product-page">Напишите нам</a>
+              <a class="slider-item-button button login-link" href="product-page">Напишите нам</a>
               </h4>
             </div>
           </div>
@@ -368,5 +376,21 @@
 			</ul>
 		</div>
 	</footer>
+  <script>
+    var link = document.querySelector(".login-link");
+
+    var popup = document.querySelector(".modal-login");
+    var close = popup.querySelector(".modal-close");
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+  </script>
 </body>
 </html>

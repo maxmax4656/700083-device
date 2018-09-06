@@ -776,54 +776,89 @@ position: relative;
 
 /* Сервисное */
 
-.services {
-  background-color: #e5e5e5;
-  margin-bottom: 90px;
+.serv-flex-22 {
+  display: flex;
+  height: 280px;
 }
 
-.services-items {
+.serv-decr {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.serv-decr a {
+}
+
+.serv-about {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.serv-about-1 {
   display: flex;
 }
 
-.services-items a {
-  font-family: gilroyextrabold, sans-serif;
+.serv-about-1 h4 {
+  outline: 1px solid red;
+  display: block;
+}
+
+.button-3 {
+  display: block;
+  height: 8px;
+  width: 160px;
+  position: relative;
+
+  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.2em;
   color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.button-3::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  z-index: -1;
+  width: 160px;
+  height: 8px;
+  background-color: #f0c52e;
+  transition: all .2s ease-in-out;
+  transform: translateY(-42%);
+}
+
+.button-3:hover::before {
+  height: 40px;
+  background-color: #f0c52e;
   width: 160px;
 }
 
-.services-items a:hover {
-  width: 160px;
-  color: #f7e184;
+.button-3:hover {
+  color: #000;
+}
+
+.button-3:active{
+  color: rgba(0,0,0,0.3);
+}
+
+.button-3:active::before {
+  height: 40px;
   background-color: #000;
+  width: 278px;
 }
 
-.services-item {
-  display: flex;
+.button-3:active {
+  color: #f7e184;
 }
-
-.about-info {
-  width: 385px;
-}
-
-.services-items h4 {
-  font-family: gilroyextrabold, sans-serif;
-  font-size: 47px;
-  line-height: 48px;
-  color: #000;
-}
-
-.services-items p {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
-  text-transform: none;
-}
-
 
 
 /* Логотипы */
@@ -896,10 +931,30 @@ position: relative;
   line-height: 40px;
   color: #000;
   text-transform: none;
-  list-style: circle;
-  padding-left: 35px;
   position: relative;
-  padding-left: 10px;
+  padding-left: 30px;
+}
+
+.delivery-company a::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #e5e5e5;
+  top: 5px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.delivery-company a::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  top: 7px;
+  left: 2px;
+  border-radius: 50%;
 }
 
 
@@ -945,6 +1000,10 @@ position: relative;
 
     z-index: 1000;
 
+  }
+
+  .modal-show {
+    display: block;
   }
 
   .modal-login {
@@ -1497,7 +1556,6 @@ form a {
   font-family: gilroyextrabold, 'Arial', sans-serif;
   color: #000;
   font-weight: 900;
-  letter-spacing: 0.2em;
   font-size: 18px;
 }
 
@@ -1681,6 +1739,7 @@ form label {
 /* Модалка */
 
 
+
 .popup-modal-big {
   font-family: gilroyextrabold, sans-serif;
   font-size: 18px;
@@ -1810,6 +1869,38 @@ form label {
 
 /* Каталог продуктов */
 
+.mini {
+  width: 360px;
+  height: 380px;
+  color: transparent;
+}
+
+.mini img {
+  width: 360px;
+  height: 380px;
+}
+
+.mini p {
+  text-align: center;
+  position: absolute;
+  width: 170px;
+  margin-top: 50px;
+  margin-left: 28px;
+  font-size: 26px;
+  pointer-events: none;
+}
+
+.mini p a {
+  color: #000;
+}
+
+.mini:hover{
+  color: #fff;
+  background-color: #000;
+  opacity: 0.7;
+  cursor:pointer;
+}
+
 .catalog {
   width: 760px;
   margin-top: 70px;
@@ -1829,6 +1920,125 @@ form label {
   width: 760px;
   flex-wrap: wrap;
 }
+
+.portfolio {
+  margin: 0;
+  position: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.portfolio img {
+  display: block;
+}
+
+.descr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 300px;
+  background: rgba(255,255,255,0.5);
+  color: #fff;
+  padding-top: 160px;
+  text-align: center;
+  transition: all .5s;
+  opacity: 0;
+}
+
+.portfolio:hover .descr {
+  opacity: 1;
+}
+
+
+
+
+
+.button-1 {
+  display: block;
+  position: relative;
+
+  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  margin-bottom: 63px;
+
+  z-index: 1;
+  margin: 0;
+}
+
+.button-1::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 77px;
+  z-index: -1;
+  width: 200px;
+  height: 8px;
+  background-color: #f0c52e;
+  transition: all .2s ease-in-out;
+  transform: translateY(-42%);
+}
+
+.button-1:hover::before {
+  height: 40px;
+}
+
+.button-1:active{
+  color: rgba(0,0,0,0.3);
+}
+
+.button-2 {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(0,0,0,0.7);
+  text-transform: none;
+}
+
+.button-2:hover {
+  color: rgba(0,0,0,1);
+}
+
+.button-2:active {
+  color: rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .catalog-item span {
   font-family: gilroyextrabold, sans-serif;
