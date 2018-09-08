@@ -80,6 +80,13 @@ img {
   margin-bottom: 50px;
 }
 
+.main-header-catalog {
+  background-color: #f7e296;
+  width: 1160px;
+  height: 186px;
+  margin-bottom: 50px;
+}
+
 .main-header-logo p {
   text-decoration: none;
   color: #000;
@@ -364,8 +371,11 @@ nav .site-navigation .dropdown {
 
 nav .site-navigation li:hover>ul {
   display: inherit;
-  width: 1040px;
+  width: 550px;
   height: 128px;
+  left: -60px;
+  padding-right: 610px;
+  padding-bottom: 10px;
 }
 
 nav .site-navigation .dropdown li {
@@ -373,7 +383,7 @@ nav .site-navigation .dropdown li {
   float: none;
   position: relative;
   margin-right: 20px;
-  outline: 1px solid red;
+  left: 60px;
 }
 
 .dropdown a {
@@ -388,37 +398,6 @@ nav .site-navigation .dropdown li {
   padding: 0;
   margin: 0;
   margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.new-width {
-  width: 550px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.new-width li:nth-child(1) {
-  order: 1;
-}
-
-.new-width li:nth-child(2) {
-  order: 4;
-}
-
-.new-width li:nth-child(3) {
-  order: 6;
-}
-
-.new-width li:nth-child(4) {
-  order: 2;
-}
-
-.new-width li:nth-child(5) {
-  order: 5;
-}
-
-.new-width li:nth-child(6) {
-  order: 3;
 }
 
 /* Слайдды */
@@ -1165,9 +1144,9 @@ nav .site-navigation .dropdown li {
 .site-navigation-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1200px;
   align-content: center;
+  margin-bottom: 35px;
 }
 
 .site-navigation-footer a {
@@ -1187,6 +1166,23 @@ nav .site-navigation .dropdown li {
 
 .site-navigation-footer a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-footer li:first-child {
+  width: 200px;
+  margin-right: 160px;
+}
+
+.site-navigation-footer li:nth-child(2),
+.site-navigation-footer li:nth-child(3),
+.site-navigation-footer li:nth-child(4) {
+  width: 140px;
+  margin-right: 25px;
+}
+
+.site-navigation-footer li:last-child {
+  width: 160px;
+  margin-left: auto;
 }
 
 .site-navigation-footer .catalog {
@@ -1239,7 +1235,6 @@ nav .site-navigation .dropdown li {
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 30px;
-  margin-top: 70px;
 }
 
 .dec-element {
@@ -1316,18 +1311,20 @@ nav .site-navigation .dropdown li {
 
 .user-navigation-footer {
   display: flex;
+  margin-bottom: -25px;
 }
 
 .user-navigation-footer li:nth-child(1) {
-  width: 800px;
+  width: 160px;
 }
 
 .user-navigation-footer li:nth-child(2) {
-  width: 140px;
+  margin-left: auto;
+  margin-right: 40px;
 }
 
-.user-navigation-footer li:nth-child(3) {
-  width: 130px;
+.user-navigation-footer li:last-child {
+  margin-left: 40px;
 }
 
 .dec-element {
@@ -1493,15 +1490,12 @@ nav .site-navigation .dropdown li {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0,0,0,0.3);
 }
+
 
 .sort-3 a:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.sort-3 a:active {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0,0,0,0.6);
 }
 
 .goods .arrow-up {
@@ -1522,14 +1516,16 @@ nav .site-navigation .dropdown li {
 
 .sort-main {
   background-image: linear-gradient(to right, #efefef 0%, #efefef 33%, #ffffff 33%, #ffffff 100%);
-  z-index: -20;
+  position: relative;
+  z-index: 0;
 }
 
 .sort-flex {
   display: flex;
   padding-left: 40px;
   background-image: linear-gradient(to right, #efefef 0%, #efefef 28.5%, #ffffff 28.5%, #ffffff 100%);
-  z-index: -20;
+  position: relative;
+  z-index: 0;
 }
 
 /* Форма фильтров */
@@ -1606,6 +1602,10 @@ form label {
   opacity: 0.6;
 }
 
+.login-checkbox input[type="checkbox"]:hover+.checkbox-indicator {
+  opacity: 0.3;
+}
+
 .login-checkbox input[type="checkbox"]:checked+.checkbox-indicator, .login-checkbox input[type="checkbox"]:active+.checkbox-indicator {
   background: url('../img/svg/checkbox-on.svg') no-repeat;
 }
@@ -1633,6 +1633,10 @@ form label {
 
 .login-radio input[type="radio"]:focus+.radio-indicator {
   opacity: 0.6;
+}
+
+.login-radio input[type="radio"]:hover+.radio-indicator {
+  opacity: 0.3;
 }
 
 .login-radio input[type="radio"]:checked+.radio-indicator, .login-radio input[type="radio"]:active+.radio-indicator {
@@ -1951,14 +1955,14 @@ form label {
   margin-bottom: 63px;
   z-index: 1;
   margin: 0;
-  left: 25%;
+  left: 0;
 }
 
 .button-1::before {
   content: "";
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 78px;
   z-index: -1;
   width: 200px;
   height: 8px;

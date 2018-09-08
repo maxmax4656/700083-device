@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="container">
-		<header class="main-header">
+		<header class="main-header-catalog">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html" aria-label="Логотип">
           <p>Device</p>
@@ -63,7 +63,7 @@
 									<h3>Фильтр:</h3>
 									<h3>Сортировка:</h3>
 									<ul class="sort-3">
-										<li class="sort-price"><a href="#">По цене</a></li>
+										<li><a class="sort-price" href="#">По цене</a></li>
 										<li class="sort-type"><a href="#">По типу</a></li>
 										<li class="sort-pop"><a href="#">По популярности</a></li>
 									</ul>
@@ -82,6 +82,7 @@
 								</div>
 							</div>
 						</div>
+					</form>
 
 						<div class="sort-main">
 							<div class="container">
@@ -107,6 +108,13 @@
 
 									<fieldset class="color">
 										<legend class="top-bor">Цвет</legend>
+											<p class="login-help">
+												<label class="login-checkbox">
+													<input type="checkbox" name="Black" class="visually-hidden" checked disabled>
+													<span class="checkbox-indicator"></span>
+													Черный
+												</label>
+											</p>
 											<p class="login-help">
 												<label class="login-checkbox">
 													<input type="checkbox" name="Black" class="visually-hidden" checked>
@@ -222,7 +230,7 @@
 											<span class="descr">
 												<a href="#" class="button-1">В корзину</a><br>
 												<a href="#" class="button-2">Добавить к сравнению</a>
-											</span><img src="img/content-img/item-1.jpg" alt="" width="360" height="380">
+											</span><img src="img/content-img/item-4.jpg" alt="" width="360" height="380">
 										</div>
 										<div class="explanation">
 											<h3>
@@ -276,11 +284,11 @@
 			<div class="footer-2">
 				<nav class="main-navigation">
 					<ul class="site-navigation-footer">
-						<p aria-label="Наш адрес">г.Москва, ул.Строителей, 15</p>
+						<li><p aria-label="Наш адрес">г.Москва, ул.Строителей, 15</p></li>
 						<li><a href="delivery.html">Доставка</a></li>
 						<li><a href="guarantee.html">Гарантия</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
-						<p aria-label="Наш номер телефона">Тел: +7(495)495-95-95</p>
+						<li><p aria-label="Наш номер телефона">Тел: +7(495)495-95-95</p></li>
 					</ul>
 				</nav>
 			</div>
