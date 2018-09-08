@@ -1,21 +1,19 @@
 @font-face {
-  font-family: "gilroylight";
+  font-family: gilroylight;
   src: url(../fonts/gilroylight.woff), url(../fonts/gilroylight.woff2);
   font-weight: 300;
-  font-style: light;
 }
 
 @font-face {
-  font-family: "gilroyextrabold";
+  font-family: gilroyextrabold;
   src: url(../fonts/gilroyextrabold.woff), url(../fonts/gilroyextrabold.woff2);
   font-weight: 700;
-  font-style: ExtraBold;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: opensans, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #464646;
@@ -91,13 +89,12 @@ img {
   text-decoration: none;
   color: #000;
   font-size: 48px;
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   line-height: 48px;
   font-weight: 800;
   position: relative;
   top: -23px;
   left: 57px;
-  margin: -10;
 }
 
 .main-header-logo p:hover {
@@ -161,6 +158,32 @@ img {
 }
 
 .enter-link:active::before {
+  opacity: 0.3;
+}
+
+.enter-link-1 {
+  padding-left: 50px;
+  position: relative;
+  outline: 1px solid red;
+}
+
+.enter-link-1::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  top: 9px;
+  left: 30px;
+  background-image: url('../img/svg/user.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.enter-link-1:hover::before, .enter-link-1:focus::before {
+  opacity: 0.6;
+}
+
+.enter-link-1:active::before {
   opacity: 0.3;
 }
 
@@ -333,7 +356,7 @@ img {
 
 .site-navigation a {
   color: #000;
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -379,7 +402,7 @@ nav .site-navigation li:hover>ul {
 }
 
 nav .site-navigation .dropdown li {
-  min-width: 170xp;
+  min-width: 170px;
   float: none;
   position: relative;
   margin-right: 20px;
@@ -659,7 +682,7 @@ nav .site-navigation .dropdown li {
   position: absolute;
   top: 11px;
   left: 0;
-  z-index: 1;
+  z-index: -1;
   width: 260px;
   height: 8px;
   background-color: #f0c52e;
@@ -686,7 +709,7 @@ nav .site-navigation .dropdown li {
 
 .popular-items a {
   text-transform: none;
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   color: #000;
   font-size: 18px;
   line-height: 24px;
@@ -721,7 +744,6 @@ nav .site-navigation .dropdown li {
 .img-center:active {
   background-color: #f7e184;
 }
-
 
 .popular-item a {
   width: 160px;
@@ -904,7 +926,7 @@ nav .site-navigation .dropdown li {
 }
 
 .info-contacts h3 {
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000;
@@ -982,7 +1004,7 @@ nav .site-navigation .dropdown li {
 }
 
 .moore-info {
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -1074,7 +1096,7 @@ nav .site-navigation .dropdown li {
 .login-icon-user::placeholder, .e-mail::placeholder {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1084,6 +1106,19 @@ nav .site-navigation .dropdown li {
 
 .login-icon-user:active::placeholder, .login-icon-user:focus::placeholder, .e-mail:active::placeholder, .e-mail:focus::placeholder {
   color: rgba(0, 0, 0, 1);
+}
+
+.modal-fl input:hover {
+  background-color: #ebebeb;
+}
+
+.modal-fl input:focus {
+  background-color: #fff;
+  outline: 3px solid #f7e296;
+}
+
+.modal-fl input:invalid {
+  background-color: #f6dada;
 }
 
 .modal textarea {
@@ -1124,8 +1159,7 @@ nav .site-navigation .dropdown li {
   text-decoration: none;
   color: #ffc600;
   font-size: 48px;
-  font-family: gilroyextrabold, sans-serif;
-  line-height: auto;
+  font-family: gilroyextrabold, 'Arial' sans-serif;
   cursor: pointer;
 }
 
@@ -1151,7 +1185,7 @@ nav .site-navigation .dropdown li {
 
 .site-navigation-footer a {
   color: rgba(255, 255, 255, 1);
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial' sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -1190,7 +1224,7 @@ nav .site-navigation .dropdown li {
 }
 
 .site-navigation-footer p {
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -1206,9 +1240,6 @@ nav .site-navigation .dropdown li {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-link a:hover {
-  color: rgba(255, 255, 255);
-}
 
 .footer-link a:active {
   color: rgba(255, 255, 255, 0.3);
@@ -1277,7 +1308,7 @@ nav .site-navigation .dropdown li {
 
 .enter-link {
   color: rgba(255, 255, 255, 0.7);
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -1342,7 +1373,7 @@ nav .site-navigation .dropdown li {
 }
 
 .for-h1 h1 {
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 900;
@@ -1363,7 +1394,7 @@ nav .site-navigation .dropdown li {
 .breadcrumbs a {
   text-decoration: none;
   color: #cacaca;
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
@@ -1412,7 +1443,7 @@ nav .site-navigation .dropdown li {
 .breadcrumbs-current {
   text-decoration: none;
   color: #cacaca;
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
@@ -1435,15 +1466,13 @@ nav .site-navigation .dropdown li {
   background-size: auto;
   margin: 0;
   margin-top: 50px;
-  z-index: -20;
 }
 
 .sort-2 {
   display: flex;
-  margin-left: 40px;
+  margin-left: 30px;
   align-items: center;
   background: linear-gradient(to right, #dbdbdb 0%, #dbdbdb 26%, #ebebeb 26%, #ebebeb 100%);
-  z-index: -20;
 }
 
 .sort-2 h3 {
@@ -1456,12 +1485,13 @@ nav .site-navigation .dropdown li {
 }
 
 .sort-2 h3:nth-child(1) {
-  width: 330px;
-  margin-right: 72px;
+  width: 100px;
+  margin-right: 260px;
 }
 
 .sort-2 h3:nth-child(2) {
-  width: 200px;
+  width: 160px;
+  margin-right: 40px;
 }
 
 .sort-3 {
@@ -1493,13 +1523,24 @@ nav .site-navigation .dropdown li {
   color: rgba(0,0,0,0.3);
 }
 
-
 .sort-3 a:hover {
   color: rgba(0,0,0,0.6);
 }
 
+.sort-3 a:active {
+  color: rgba(0,0,0,1);
+}
+
+.sort-3 .sort-price {
+  color: rgba(0,0,0,1);
+}
+
 .goods .arrow-up {
   margin-right: 15px;
+}
+
+.goods {
+  margin-left: auto;
 }
 
 .goods a {
@@ -1514,6 +1555,10 @@ nav .site-navigation .dropdown li {
   opacity: 1;
 }
 
+.goods a:nth-of-type(2) {
+  opacity: 1;
+}
+
 .sort-main {
   background-image: linear-gradient(to right, #efefef 0%, #efefef 33%, #ffffff 33%, #ffffff 100%);
   position: relative;
@@ -1522,8 +1567,8 @@ nav .site-navigation .dropdown li {
 
 .sort-flex {
   display: flex;
-  padding-left: 40px;
-  background-image: linear-gradient(to right, #efefef 0%, #efefef 28.5%, #ffffff 28.5%, #ffffff 100%);
+  padding-left: 30px;
+  background-image: linear-gradient(to right, #efefef 0%, #efefef 27.91%, #ffffff 27.91%, #ffffff 100%);
   position: relative;
   z-index: 0;
 }
@@ -1606,8 +1651,20 @@ form label {
   opacity: 0.3;
 }
 
+.login-checkbox input[type="checkbox"]:checked:hover+.checkbox-indicator {
+  opacity: 0.6;
+}
+
 .login-checkbox input[type="checkbox"]:checked+.checkbox-indicator, .login-checkbox input[type="checkbox"]:active+.checkbox-indicator {
   background: url('../img/svg/checkbox-on.svg') no-repeat;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator {
+  opacity: 1;
+}
+
+.login-checkbox input[type="checkbox"]:disabled+.checkbox-indicator {
+  opacity: 0.6;
 }
 
 .login-rad {
@@ -1641,6 +1698,18 @@ form label {
 
 .login-radio input[type="radio"]:checked+.radio-indicator, .login-radio input[type="radio"]:active+.radio-indicator {
   background: url('../img/svg/radio-on.svg') no-repeat;
+}
+
+.login-radio input[type="radio"]:checked+.radio-indicator {
+  opacity: 1;
+}
+
+.login-radio input[type="radio"]:checked:hover+.radio-indicator {
+  opacity: 0.6;
+}
+
+.login-radio input[type="radio"]:disabled+.radio-indicator {
+  opacity: 0.6;
 }
 
 .color p:last-child {
@@ -1743,7 +1812,8 @@ form label {
 }
 
 .price-controls input:nth-child(3) {
-  padding-left: -10px;
+  padding-left: 10px;
+  outline: 1px solid red;
 }
 
 .max-price {
@@ -1753,7 +1823,7 @@ form label {
 /* Модалка */
 
 .popup-modal-big {
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1766,7 +1836,7 @@ form label {
 }
 
 .popup-modal-small {
-  font-family: opensanslight, sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
@@ -1840,9 +1910,6 @@ form label {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.page-2:active, .page-3:active {
-  color: rgba(0, 0, 0);
-}
 
 .current {
   color: rgb(0, 0, 0);
@@ -1896,7 +1963,7 @@ form label {
 
 .catalog {
   margin-top: 70px;
-  margin-left: 100px;
+  margin-left: 110px;
 }
 
 .catalog-item {
@@ -1916,7 +1983,6 @@ form label {
 
 .portfolio {
   margin: 0;
-  position: 0;
   list-style-type: none;
   position: relative;
 }
@@ -1952,9 +2018,9 @@ form label {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  margin-bottom: 63px;
-  z-index: 1;
   margin: 0;
+  margin-bottom: 13px;
+  z-index: 1;
   left: 0;
 }
 
@@ -2004,7 +2070,7 @@ form label {
 }
 
 .catalog-item span {
-  font-family: gilroyextrabold, sans-serif;
+  font-family: gilroyextrabold, 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -2012,7 +2078,7 @@ form label {
 }
 
 .catalog-item b {
-  font-family: gilroylight, sans-serif;
+  font-family: gilroylight, 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -2095,6 +2161,8 @@ form label {
   top: 0;
   left: 0;
   z-index: 20;
+  display: flex;
+  flex-direction: column;
 }
 
 .sluder-controls label {
@@ -2158,43 +2226,22 @@ form label {
   background-color: #f0c52e;
 }
 
-.button {
-  display: block;
-  height: 8px;
-  width: 260px;
-  position: relative;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  font-size: 18px;
-  line-height: 24px;
+#product-11:not(:checked):hover~.site-wrapper label[for="product-11"]::before, #product-22:not(:checked):hover~.site-wrapper label[for="product-22"]::before, #product-33:not(:checked):hover~.site-wrapper label[for="product-33"]::before {
   color: #000;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 63px;
-}
-
-.button::before {
+  background-color: #000;
+  color: #f7e184;
   content: "";
   position: absolute;
-  top: 11px;
+  top: 0;
   left: 0;
   z-index: -1;
-  width: 260px;
-  height: 8px;
+  width: 160px;
+  height: 40px;
   background-color: #f0c52e;
   transition: all .2s ease-in-out;
-  transform: translateY(-42%);
 }
 
-.button:hover::before {
-  height: 40px;
-}
 
-.button:active {
-  color: rgba(0, 0, 0, 0.3);
-}
 
 .sluder li:nth-child(1) img {
   top: -200px;
