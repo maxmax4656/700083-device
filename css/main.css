@@ -358,7 +358,9 @@ nav .site-navigation .dropdown {
   width: 600px;
   background: #f7e296;
   z-index: 1000;
+  word-wrap: wrap;
 }
+
 
 nav .site-navigation li:hover>ul {
   display: inherit;
@@ -371,6 +373,7 @@ nav .site-navigation .dropdown li {
   float: none;
   position: relative;
   margin-right: 20px;
+  outline: 1px solid red;
 }
 
 .dropdown a {
@@ -677,7 +680,7 @@ nav .site-navigation .dropdown li {
   position: absolute;
   top: 11px;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   width: 260px;
   height: 8px;
   background-color: #f0c52e;
@@ -695,10 +698,11 @@ nav .site-navigation .dropdown li {
 
 /* Популярное */
 
+
 .popular .popular-items {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
 }
 
 .popular-items a {
@@ -708,6 +712,13 @@ nav .site-navigation .dropdown li {
   font-size: 18px;
   line-height: 24px;
   display: inline-block;
+}
+
+.tog {
+  position: absolute;
+  top: 81.3%;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
 .popular-items a:active {
@@ -728,9 +739,22 @@ nav .site-navigation .dropdown li {
   background-color: #f0c52e;
 }
 
+.img-center:active {
+  background-color: #f7e184;
+}
+
+
 .popular-item a {
   width: 160px;
   word-wrap: break-word;
+}
+
+.vr-img {
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .vr-img:active {
@@ -1414,6 +1438,7 @@ nav .site-navigation .dropdown li {
   background-size: auto;
   margin: 0;
   margin-top: 50px;
+  z-index: -20;
 }
 
 .sort-2 {
@@ -1421,6 +1446,7 @@ nav .site-navigation .dropdown li {
   margin-left: 40px;
   align-items: center;
   background: linear-gradient(to right, #dbdbdb 0%, #dbdbdb 26%, #ebebeb 26%, #ebebeb 100%);
+  z-index: -20;
 }
 
 .sort-2 h3 {
@@ -1496,12 +1522,14 @@ nav .site-navigation .dropdown li {
 
 .sort-main {
   background-image: linear-gradient(to right, #efefef 0%, #efefef 33%, #ffffff 33%, #ffffff 100%);
+  z-index: -20;
 }
 
 .sort-flex {
   display: flex;
   padding-left: 40px;
   background-image: linear-gradient(to right, #efefef 0%, #efefef 28.5%, #ffffff 28.5%, #ffffff 100%);
+  z-index: -20;
 }
 
 /* Форма фильтров */
@@ -1569,7 +1597,7 @@ form label {
   position: absolute;
   top: 8px;
   left: 0;
-  width: 23px;
+  width: 27px;
   height: 23px;
   background: url(../img/svg/checkbox-off.svg) no-repeat;
 }
@@ -1889,16 +1917,13 @@ form label {
   position: relative;
 }
 
-.portfolio img {
-  display: block;
-}
 
 .descr {
   position: absolute;
   top: 0;
   left: 0;
   width: 360px;
-  height: 300px;
+  height: 220px;
   background: rgba(255, 255, 255, 0.5);
   color: #fff;
   padding-top: 160px;
@@ -1995,11 +2020,15 @@ form label {
   margin: 0;
   padding: 0;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .explanation h3 {
   width: 260px;
+}
+
+.explanation b {
+  vertical-align: top;
 }
 
 /* Example */
@@ -2010,6 +2039,7 @@ form label {
   transition: background-image 0.5s ease, background-color 0.5s ease;
   margin-bottom: 105px;
   height: 288px;
+  margin-top: 50px;
 }
 
 .sluder {
