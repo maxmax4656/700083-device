@@ -1247,7 +1247,6 @@ nav .site-navigation .dropdown li {
 
 .site-navigation-footer li:first-child {
   width: 200px;
-  margin-right: 160px;
 }
 
 .site-navigation-footer li:nth-child(2),
@@ -1261,7 +1260,6 @@ nav .site-navigation .dropdown li {
 }
 
 .site-navigation-footer li:nth-child(4) {
-  margin-right: auto;
 }
 
 .site-navigation-footer li:last-child {
@@ -1394,6 +1392,10 @@ nav .site-navigation .dropdown li {
   margin-right: 23px;
 }
 
+.user-navigation-footer li:nth-child(1) {
+
+}
+
 .social-button {
   opacity: 0.3;
   width: 52.5px;
@@ -1465,15 +1467,18 @@ nav .site-navigation .dropdown li {
   margin-left: auto;
 }
 
-/* .user-navigation-footer li:last-child {
-  margin-left: 40px;
-} */
+
+.user-navigation-footer li:nth-child(3) {
+
+  margin-left: auto;
+}
 
 .dec-element {
   height: 7px;
   width: 80px;
   background-color: #ffc600;
 }
+
 
 /* Catalog.html */
 
@@ -2139,7 +2144,16 @@ form label {
 .portfolio {
   margin: 0;
   list-style-type: none;
-  position: relative;
+  position: relative;  background-image:
+}
+
+.new {
+  position: absolute;
+  top: 29px;
+  left: 273px;
+  background-image: url('../img/content-img/new.png');
+  width: 60px;
+  height: 60px;
 }
 
 
@@ -2155,6 +2169,7 @@ form label {
   text-align: center;
   transition: all .5s;
   opacity: 0;
+
 }
 
 .portfolio:hover .descr {
@@ -2220,7 +2235,6 @@ form label {
 }
 
 .main-grid {
-  outline: 1px solid red;
   width: 760px;
 }
 
