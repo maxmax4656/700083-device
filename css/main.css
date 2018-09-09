@@ -112,7 +112,7 @@ img {
 
 /* User-navigation */
 
-.user-navigation a, .user-navigation-footer a {
+.user-navigation a, .user-navigation-footer-1 a {
   text-decoration: none;
   text-transform: none;
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -141,7 +141,7 @@ img {
 }
 
 .enter-link {
-  padding-left: 50px;
+  padding-left: 25px;
   position: relative;
 }
 
@@ -151,7 +151,7 @@ img {
   height: 18px;
   position: absolute;
   top: 9px;
-  left: 30px;
+  left: 7px;
   background-image: url('../img/svg/user.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -243,7 +243,6 @@ img {
 
 .d6 {
   width: 540px;
-  margin-right: 45px;
 }
 
 .d6 input {
@@ -251,7 +250,6 @@ img {
   background-color: #f7e296;
   outline: 0;
   padding: 8px 20px;
-  margin: -5px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   width: 225px;
@@ -1304,19 +1302,19 @@ nav .site-navigation .dropdown li {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.user-navigation-footer a {
+.user-navigation-footer-1 a {
   fill: #ffc600;
 }
 
-.user-navigation-footer a:hover {
+.user-navigation-footer-1 a:hover {
   opacity: 0.6;
 }
 
-.user-navigation-footer a:active {
+.user-navigation-footer-1 a:active {
   opacity: 0.3;
 }
 
-.user-navigation-footer li:nth-child(2) a {
+.user-navigation-footer-1 li:nth-child(2) a {
   fill: #ffc600;
 }
 
@@ -1372,7 +1370,7 @@ nav .site-navigation .dropdown li {
   margin-right: 23px;
 }
 
-.user-navigation-footer li:nth-child(1) {}
+.user-navigation-footer-1 li:nth-child(1) {}
 
 .social-button {
   opacity: 0.3;
@@ -1429,22 +1427,21 @@ nav .site-navigation .dropdown li {
   margin-left: 9px;
 }
 
-.user-navigation-footer {
+.user-navigation-footer-1 {
   display: flex;
   margin-bottom: -25px;
 }
 
-.user-navigation-footer li:nth-child(2) {
-  margin-left: 520px;
+.user-navigation-footer-1 li:nth-child(2) {
+  margin-left: auto;
   margin-right: 26px;
 }
 
-.user-navigation-footer li:last-child {
-  margin-left: auto;
+.user-navigation-footer-1 li:last-child {
 }
 
-.user-navigation-footer li:nth-child(3) {
-  margin-left: auto;
+.user-navigation-footer-1 li:nth-child(3) {
+  margin-right: 25px;
 }
 
 .dec-element {
@@ -1492,10 +1489,6 @@ nav .site-navigation .dropdown li {
   width: 260px;
   margin: 0;
   padding: 0;
-}
-
-.output-link {
-  opacity: 0.3;
 }
 
 /* breadcrumbs */
