@@ -1,13 +1,17 @@
 @font-face {
-  font-family: gilroylight;
-  src: url(../fonts/gilroylight.woff), url(../fonts/gilroylight.woff2);
+  font-family: 'Gilroy';
+  src:
+    url(../fonts/gilroylight.woff),
+    url(../fonts/gilroylight.woff2);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: gilroyextrabold;
-  src: url(../fonts/gilroyextrabold.woff), url(../fonts/gilroyextrabold.woff2);
-  font-weight: 700;
+  font-family: 'Gilroy';
+  src:
+    url(../fonts/gilroyextrabold.woff),
+    url(../fonts/gilroyextrabold.woff2);
+  font-weight: 800;
 }
 
 body {
@@ -90,7 +94,7 @@ img {
   text-decoration: none;
   color: #000;
   font-size: 48px;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   line-height: 48px;
   font-weight: 800;
   position: relative;
@@ -356,7 +360,7 @@ img {
 
 .site-navigation a {
   color: #000;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -390,7 +394,6 @@ nav .site-navigation .dropdown {
   z-index: 1000;
   word-wrap: wrap;
 }
-
 
 nav .site-navigation li:hover>ul {
   display: inherit;
@@ -538,6 +541,7 @@ nav .site-navigation .dropdown li {
   width: 500px;
   position: relative;
   top: -45px;
+  height: 100px;
 }
 
 .slider-list .slider-item:nth-child(1) .slide-img-main:nth-child(1) img {
@@ -581,8 +585,7 @@ nav .site-navigation .dropdown li {
   width: 390px;
 }
 
-.slider-list .slider-item:nth-child(3) h3 {
-}
+.slider-list .slider-item:nth-child(3) h3 {}
 
 .slider-des {
   display: flex;
@@ -644,7 +647,7 @@ nav .site-navigation .dropdown li {
   max-width: 500px;
   margin: 0;
   margin-bottom: 27px;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
@@ -652,7 +655,6 @@ nav .site-navigation .dropdown li {
   text-transform: none;
   padding-top: 95px;
 }
-
 
 .slider-item p {
   max-width: 480px;
@@ -668,7 +670,7 @@ nav .site-navigation .dropdown li {
 
 .slider-item span {
   display: block;
-  font-family: gilroylight, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
@@ -681,7 +683,7 @@ nav .site-navigation .dropdown li {
   height: 8px;
   width: 260px;
   position: relative;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
   font-size: 18px;
@@ -730,19 +732,16 @@ nav .site-navigation .dropdown li {
 
 .slider-dec-el p {
   display: inline;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 179.2px;
   line-height: 179.2px;
   color: #fff;
-
   left: 334px;
   position: relative;
-
 }
 
 /* Популярное */
-
 
 .popular .popular-items {
   display: flex;
@@ -752,7 +751,7 @@ nav .site-navigation .dropdown li {
 
 .popular-items a {
   text-transform: none;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000;
   font-size: 18px;
   line-height: 24px;
@@ -771,21 +770,18 @@ nav .site-navigation .dropdown li {
 }
 
 .img-center {
-  display: flex;
-  justify-content: center;
   width: 160px;
   height: 160px;
-  align-items: center;
   background-color: #f7e296;
-  margin-bottom: 35px;
 }
 
 .img-center:hover {
   background-color: #f0c52e;
 }
 
-.img-center:active {
-  background-color: #f7e184;
+.img-center:active img,
+.img-center:active a {
+  opacity: 0.3;
 }
 
 .popular-item a {
@@ -793,16 +789,35 @@ nav .site-navigation .dropdown li {
   word-wrap: break-word;
 }
 
-.vr-img {
-  width: 160px;
-  height: 160px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+.popular-item img {
+  position: relative;
+  left: 30px;
+  top: 52px;
 }
 
-.vr-img:active {
-  opacity: 0.3;
+.popular-items .popular-item:nth-child(2) img {
+  top: 42px;
+  left: 38px;
+}
+
+.popular-items .popular-item:nth-child(3) img {
+  top: 38px;
+  left: 49px;
+}
+
+.popular-items .popular-item:nth-child(4) img {
+  top: 50px;
+  left: 28px;
+}
+
+.popular-items .popular-item:nth-child(5) img {
+  top: 32px;
+  left: 55px;
+}
+
+.popular-items .popular-item:nth-child(6) img {
+  top: 49px;
+  left: 13px;
 }
 
 /* Сервисное */
@@ -847,7 +862,7 @@ nav .site-navigation .dropdown li {
 
 .serv-about h4 {
   display: inline;
-  font-family: gilroyextrabold, 'Sans Serif', sans-serif;
+  font-family: 'Gilroy', 'Sans Serif', sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000;
@@ -877,7 +892,7 @@ nav .site-navigation .dropdown li {
   height: 8px;
   width: 160px;
   position: relative;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
   font-size: 18px;
@@ -969,7 +984,7 @@ nav .site-navigation .dropdown li {
 }
 
 .info-contacts h3 {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
   line-height: 48px;
   color: #000;
@@ -991,7 +1006,7 @@ nav .site-navigation .dropdown li {
 }
 
 .delivery-company a {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
@@ -1047,7 +1062,7 @@ nav .site-navigation .dropdown li {
 }
 
 .moore-info {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -1101,7 +1116,7 @@ nav .site-navigation .dropdown li {
 }
 
 .modal-des {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1202,7 +1217,7 @@ nav .site-navigation .dropdown li {
   text-decoration: none;
   color: #ffc600;
   font-size: 48px;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   cursor: pointer;
 }
 
@@ -1228,7 +1243,7 @@ nav .site-navigation .dropdown li {
 
 .site-navigation-footer a {
   color: rgba(255, 255, 255, 1);
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
@@ -1249,9 +1264,7 @@ nav .site-navigation .dropdown li {
   width: 200px;
 }
 
-.site-navigation-footer li:nth-child(2),
-.site-navigation-footer li:nth-child(3),
-.site-navigation-footer li:nth-child(4) {
+.site-navigation-footer li:nth-child(2), .site-navigation-footer li:nth-child(3), .site-navigation-footer li:nth-child(4) {
   width: 140px;
 }
 
@@ -1259,8 +1272,7 @@ nav .site-navigation .dropdown li {
   margin-left: auto;
 }
 
-.site-navigation-footer li:nth-child(4) {
-}
+.site-navigation-footer li:nth-child(4) {}
 
 .site-navigation-footer li:last-child {
   width: 160px;
@@ -1288,7 +1300,6 @@ nav .site-navigation .dropdown li {
   color: rgba(255, 255, 255, 0.7);
 }
 
-
 .footer-link a:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1309,17 +1320,8 @@ nav .site-navigation .dropdown li {
   fill: #ffc600;
 }
 
-
-
-
-
-
-
-
-
 .user-link-footer {
   position: relative;
-
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1346,28 +1348,6 @@ nav .site-navigation .dropdown li {
   opacity: 0.3;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .socials-items {
   display: flex;
   justify-content: flex-start;
@@ -1392,9 +1372,7 @@ nav .site-navigation .dropdown li {
   margin-right: 23px;
 }
 
-.user-navigation-footer li:nth-child(1) {
-
-}
+.user-navigation-footer li:nth-child(1) {}
 
 .social-button {
   opacity: 0.3;
@@ -1456,20 +1434,16 @@ nav .site-navigation .dropdown li {
   margin-bottom: -25px;
 }
 
-
 .user-navigation-footer li:nth-child(2) {
   margin-left: 520px;
   margin-right: 26px;
 }
 
 .user-navigation-footer li:last-child {
-
   margin-left: auto;
 }
 
-
 .user-navigation-footer li:nth-child(3) {
-
   margin-left: auto;
 }
 
@@ -1479,12 +1453,10 @@ nav .site-navigation .dropdown li {
   background-color: #ffc600;
 }
 
-
 /* Catalog.html */
 
 .user-link {
   position: relative;
-
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1526,7 +1498,6 @@ nav .site-navigation .dropdown li {
   opacity: 0.3;
 }
 
-
 /* breadcrumbs */
 
 .for-h1 {
@@ -1534,7 +1505,7 @@ nav .site-navigation .dropdown li {
 }
 
 .for-h1 h1 {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 900;
@@ -1637,7 +1608,7 @@ nav .site-navigation .dropdown li {
 }
 
 .sort-2 h3 {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
@@ -1681,19 +1652,19 @@ nav .site-navigation .dropdown li {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sort-3 a:hover {
-  color: rgba(0,0,0,0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sort-3 a:active {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
 }
 
 .sort-3 .sort-price {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
 }
 
 .goods .arrow-up {
@@ -1769,7 +1740,7 @@ form a {
   width: 200px;
   margin: 0;
   padding: 0;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   color: #000;
   font-weight: 900;
   font-size: 18px;
@@ -1890,7 +1861,7 @@ form label {
 }
 
 .filter-item legend {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1959,7 +1930,7 @@ form label {
 
 .price-controls input {
   width: 60px;
-  font-family: gilroylight, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -1983,7 +1954,7 @@ form label {
 /* Модалка */
 
 .popup-modal-big {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -2017,7 +1988,7 @@ form label {
 }
 
 .color legend {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -2040,7 +2011,7 @@ form label {
 
 .page-move {
   color: #000;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 900;
   font-size: 16px;
   line-height: 24px;
@@ -2059,7 +2030,7 @@ form label {
 }
 
 .page-1, .page-2, .page-3 {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 900;
   font-size: 16px;
   line-height: 24px;
@@ -2069,7 +2040,6 @@ form label {
 .page-2:hover, .page-3:hover {
   color: rgba(0, 0, 0, 0.6);
 }
-
 
 .current {
   color: rgb(0, 0, 0);
@@ -2144,7 +2114,8 @@ form label {
 .portfolio {
   margin: 0;
   list-style-type: none;
-  position: relative;  background-image:
+  position: relative;
+  background-image:
 }
 
 .new {
@@ -2155,7 +2126,6 @@ form label {
   width: 60px;
   height: 60px;
 }
-
 
 .descr {
   position: absolute;
@@ -2169,7 +2139,6 @@ form label {
   text-align: center;
   transition: all .5s;
   opacity: 0;
-
 }
 
 .portfolio:hover .descr {
@@ -2179,7 +2148,7 @@ form label {
 .button-1 {
   display: block;
   position: relative;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
   font-size: 18px;
@@ -2239,7 +2208,7 @@ form label {
 }
 
 .catalog-item span {
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -2247,7 +2216,7 @@ form label {
 }
 
 .catalog-item b {
-  font-family: gilroylight, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -2303,7 +2272,7 @@ form label {
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
-  font-family: gilroyextrabold, 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
   text-transform: none;
   margin-left: 400px;
   text-align: left;
@@ -2340,7 +2309,7 @@ form label {
   vertical-align: top;
   background-color: transparent;
   cursor: pointer;
-  font-family: gilroyextrabold, 'Open Sans', sans-serif;
+  font-family: 'Gilroy', 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
