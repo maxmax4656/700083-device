@@ -96,10 +96,11 @@ img {
   font-size: 48px;
   font-family: 'Gilroy', 'Arial', sans-serif;
   line-height: 48px;
-  font-weight: 800;
+  font-weight: 700;
   position: relative;
-  top: -23px;
+  top: -25px;
   left: 57px;
+  letter-spacing: 0.01em;
 }
 
 .main-header-logo p:hover {
@@ -249,7 +250,7 @@ img {
   border: 0;
   background-color: #f7e296;
   outline: 0;
-  padding: 8px 20px;
+  padding: 8px 33px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   width: 225px;
@@ -263,8 +264,7 @@ img {
   background-color: #f7e296;
   outline: 0;
   border-bottom: 2px solid black;
-  padding: 8px 20px;
-  margin: -5px;
+  padding: 8px 33px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   width: 225px;
@@ -1055,6 +1055,7 @@ nav .site-navigation .dropdown li {
   margin-bottom: 83px;
   margin-top: 12px;
   text-align: right;
+  width: 100%;
 }
 
 .modal-map {
@@ -1378,8 +1379,6 @@ nav .site-navigation .dropdown li {
   margin-right: 23px;
 }
 
-.user-navigation-footer-1 li:nth-child(1) {}
-
 .social-button {
   opacity: 0.3;
   width: 52.5px;
@@ -1401,6 +1400,10 @@ nav .site-navigation .dropdown li {
   opacity: 0.3;
 }
 
+.user-navigation {
+  outline: 1px solid red;
+}
+
 .enter-link {
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -1408,7 +1411,8 @@ nav .site-navigation .dropdown li {
   font-size: 15px;
   line-height: 30px;
   text-transform: none;
-  width: 280px;
+  width: 80px;
+  margin-right: 200px;
 }
 
 .enter-link:hover {
