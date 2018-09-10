@@ -809,9 +809,12 @@ nav .site-navigation .dropdown li {
   background-color: #f0c52e;
 }
 
-.img-center:active img,
+.img-center:active {
+  opacity: 0.5;
+}
+
 .img-center:active a {
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
 }
 
 .popular-item a {
