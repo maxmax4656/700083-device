@@ -754,13 +754,10 @@ nav .site-navigation .dropdown li {
   font-size: 18px;
   line-height: 24px;
   display: inline-block;
+  position: relative;
+  top: 110px;
 }
 
-.tog {
-  position: relative;
-  top: 100px;
-  text-align: left;
-}
 
 .popular-items a:active {
   color: rgba(0, 0, 0, 0.3);
@@ -770,6 +767,42 @@ nav .site-navigation .dropdown li {
   width: 160px;
   height: 160px;
   background-color: #f7e296;
+}
+
+.popular-items .popular-item:nth-child(1) .img-center {
+  background-image: url('../img/svg/popular-1.svg');
+  background-repeat: no-repeat;
+  background-position: 31px 52px;
+}
+
+.popular-items .popular-item:nth-child(2) .img-center {
+  background-image: url('../img/svg/popular-2.svg');
+  background-repeat: no-repeat;
+  background-position: 38px 41px;
+}
+
+.popular-items .popular-item:nth-child(3) .img-center {
+  background-image: url('../img/svg/popular-3.svg');
+  background-repeat: no-repeat;
+  background-position: 49px 38px;
+}
+
+.popular-items .popular-item:nth-child(4) .img-center {
+  background-image: url('../img/svg/popular-4.svg');
+  background-repeat: no-repeat;
+  background-position: 28px 50px;
+}
+
+.popular-items .popular-item:nth-child(5) .img-center {
+  background-image: url('../img/svg/popular-5.svg');
+  background-repeat: no-repeat;
+  background-position: 55px 32px;
+}
+
+.popular-items .popular-item:nth-child(6) .img-center {
+  background-image: url('../img/svg/popular-6.svg');
+  background-repeat: no-repeat;
+  background-position: 13px 49px;
 }
 
 .img-center:hover {
@@ -784,38 +817,10 @@ nav .site-navigation .dropdown li {
 .popular-item a {
   width: 160px;
   word-wrap: break-word;
-}
-
-.popular-item img {
   position: relative;
-  left: 30px;
-  top: 52px;
+  top: 194px;
 }
 
-.popular-items .popular-item:nth-child(2) img {
-  top: 42px;
-  left: 38px;
-}
-
-.popular-items .popular-item:nth-child(3) img {
-  top: 38px;
-  left: 49px;
-}
-
-.popular-items .popular-item:nth-child(4) img {
-  top: 50px;
-  left: 28px;
-}
-
-.popular-items .popular-item:nth-child(5) img {
-  top: 32px;
-  left: 55px;
-}
-
-.popular-items .popular-item:nth-child(6) img {
-  top: 49px;
-  left: 13px;
-}
 
 /* Сервисное */
 
