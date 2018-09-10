@@ -757,10 +757,9 @@ nav .site-navigation .dropdown li {
 }
 
 .tog {
-  position: absolute;
-  top: 81.3%;
+  position: relative;
+  top: 100px;
   text-align: left;
-  margin-bottom: 50px;
 }
 
 .popular-items a:active {
