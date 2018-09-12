@@ -1399,6 +1399,7 @@ nav .site-navigation .dropdown li {
 .footer-main-1 {
   background-color: #464646;
   color: #ffffff;
+  padding-top: 30px;
 }
 
 .footer-main-1 a {
@@ -1922,9 +1923,6 @@ nav .site-navigation .dropdown li {
 }
 
 
-.catalog-main {
-  margin-bottom: 40px;
-}
 
 
 /* Форма фильтров */
@@ -2337,7 +2335,11 @@ form label {
 }
 
 .catalog-list .catalog-item:nth-child(3) {
-  outline: 1px solid red;
+  margin-top: 20px;
+}
+
+.catalog-list .catalog-item:nth-child(4) {
+  margin-top: 20px;
 }
 
 .portfolio {
