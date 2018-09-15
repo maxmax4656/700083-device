@@ -14,6 +14,10 @@
   font-weight: 800;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -67,7 +71,7 @@ img {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -912,47 +916,47 @@ nav .site-navigation .dropdown li {
   background-color: #f7e296;
 }
 
-.popular-items .popular-item:nth-child(1) .img-center {
-  background-image: url('../img/svg/popular-1.svg');
-  background-repeat: no-repeat;
-  background-position: 31px 52px;
+.img-center-11 img {
+  position: absolute;
+  top: -142px;
+  left: 31px;
 }
 
-.popular-items .popular-item:nth-child(2) .img-center {
-  background-image: url('../img/svg/popular-2.svg');
-  background-repeat: no-repeat;
-  background-position: 38px 41px;
+.img-center-12 img {
+  position: absolute;
+  top: -152px;
+  left: 37px;
 }
 
-.popular-items .popular-item:nth-child(3) .img-center {
-  background-image: url('../img/svg/popular-3.svg');
-  background-repeat: no-repeat;
-  background-position: 49px 38px;
+.img-center-13 img {
+  position: absolute;
+  top: -152px;
+  left: 48px;
 }
 
-.popular-items .popular-item:nth-child(4) .img-center {
-  background-image: url('../img/svg/popular-4.svg');
-  background-repeat: no-repeat;
-  background-position: 28px 50px;
+.img-center-14 img {
+  position: absolute;
+  top: -142px;
+  left: 28px;
 }
 
-.popular-items .popular-item:nth-child(5) .img-center {
-  background-image: url('../img/svg/popular-5.svg');
-  background-repeat: no-repeat;
-  background-position: 55px 32px;
+.img-center-15 img {
+  position: absolute;
+  top: -162px;
+  left: 54px;
 }
 
-.popular-items .popular-item:nth-child(6) .img-center {
-  background-image: url('../img/svg/popular-6.svg');
-  background-repeat: no-repeat;
-  background-position: 13px 49px;
+.img-center-16 img {
+  position: absolute;
+  top: -147px;
+  left: 12px;
 }
 
 .img-center:hover {
   background-color: #f0c52e;
 }
 
-.img-center:active {
+.img-center span:active {
   opacity: 0.5;
 }
 
@@ -1223,14 +1227,13 @@ nav .site-navigation .dropdown li {
 }
 
 .contacts {
-  width: 599px;
+  width: 550px;
 }
 
 .contacts img {
-  margin-bottom: 42px;
+  margin-bottom: 60px;
   margin-top: 12px;
   text-align: right;
-  width: 100%;
 }
 
 .modal-map {
